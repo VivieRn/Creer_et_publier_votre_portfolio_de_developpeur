@@ -1,0 +1,43 @@
+.ctn-header {
+  position: fixed;
+  z-index: 1;
+  top: 3em;
+  left: 3em;
+  transition: background-color 0.3s ease;
+}
+
+.ctn-header .nav {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  background: linear-gradient(#8f8f8f, #31e143);
+  border-radius: 5px;
+}
+
+.ctn-header .nav .nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ctn-header .nav .nav-links .links {
+  margin: 10px 0;
+}
+
+.ctn-header .nav .nav-links .links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.ctn-header .nav .nav-links .links a:hover {
+  background-color: #31e143;
+}

@@ -1,0 +1,94 @@
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.Header-ctn {
+  width: 80%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.Header {
+  width: 25%;
+  background: #31e143;
+  margin-top: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  line-height: 0;
+}
+.Header h1 {
+  width: 25%;
+  color: #444;
+  font-size: 2em;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 25px;
+}
+.Header p {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.Intro {
+  width: 50%;
+  margin-top: 15em;
+  padding: 1em;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+}
+.Intro h2 {
+  color: #31e143;
+  font-size: 3em;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  line-height: 40px;
+  text-align: left;
+  margin: 0;
+}
+.ctn-cta p {
+  text-align: left;
+  font-size: 1.3em;
+  margin: 0;
+  line-height: 20px;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cta {
+  margin-top: 0.5em;
+  padding: 0.5em;
+  width: 20%;
+  background-color: #31e143;
+  color: #444;
+  font-size: 1em;
+  transition: background-color 0.2s;
+  border: #444 2px solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Footer {
+  background: #31e143;
+  color: #444;
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.fa-arrow-down {
+  font-size: 1.5em;
+  color: #fff;
+}
+.cta:hover {
+  background-color: #fff;
+  border: #31e143 2px solid;
+}
