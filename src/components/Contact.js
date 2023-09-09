@@ -7,8 +7,11 @@ function Contact() {
 
   return (
     <div id="contactSection">
-      <div className="Header4">
-        <h1>Me contacter</h1>
+      <div className="Header-ctn">
+        <div className="Header4">
+          <h1>Me contacter</h1>
+          <p>Vous avez des questions ? Un projet ? Demandez !</p>
+        </div>
       </div>
       <div className="contact">
         <form
@@ -18,7 +21,7 @@ function Contact() {
           onSubmit={handleSubmit}
         >
           <div className="form-group">
-            <label htmlFor="email">E-mail:</label>
+            <label htmlFor="email">E-mail :</label>
             <input
               type="email"
               id="email"
@@ -29,7 +32,7 @@ function Contact() {
           </div>
 
           <div className="form-group">
-            <label htmlFor="subject">Sujet:</label>
+            <label htmlFor="subject">Sujet :</label>
             <input
               type="text"
               id="subject"
@@ -40,7 +43,7 @@ function Contact() {
           </div>
 
           <div className="form-group">
-            <label htmlFor="message">Message:</label>
+            <label htmlFor="message">Message :</label>
             <textarea
               id="message"
               name="message"

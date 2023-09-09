@@ -3,8 +3,11 @@ import "../styles/Works.css";
 function Works() {
   return (
     <div id="worksSection">
-      <div className="Header3">
-        <h1>Mes Travaux</h1>
+      <div className="Header-ctn">
+        <div className="Header3">
+          <h1>Mes Travaux</h1>
+          <p>Aperçu des projets que j'ai réalisé.</p>
+        </div>
       </div>
       <div className="grid-ctn">
         <div className="works-grid">
