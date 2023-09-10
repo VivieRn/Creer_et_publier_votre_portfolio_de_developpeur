@@ -1,0 +1,43 @@
+.ctn-header {
+  position: fixed;
+  z-index: 1;
+  top: 3em;
+  left: 3em;
+  transition: background-color 0.3s ease;
+}
+
+.ctn-header .nav {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  background: #53cf60;
+  border-radius: 0.3125rem;
+}
+
+.ctn-header .nav .nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ctn-header .nav .nav-links .links {
+  margin: 0.625rem 0;
+}
+
+.ctn-header .nav .nav-links .links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.125rem;
+  padding: 0.625rem;
+  display: block;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.ctn-header .nav .nav-links .links a:hover {
+  background-color: #31e143;
+}
