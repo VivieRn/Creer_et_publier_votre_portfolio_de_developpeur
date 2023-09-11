@@ -65,10 +65,11 @@
   width: 70%;
   background: linear-gradient(90deg, #444, #aaaaaa, #e7e7e7, #fff);
   border-radius: 0.3125rem;
+  padding: 1em;
 }
 
 .img-ctn {
-  width: 20.8125rem;
+  width: 30%;
   height: auto;
 }
 
@@ -178,68 +179,105 @@
     font-size: 1.4em;
     line-height: 1.2rem;
   }
-  .main-ctn {
-    margin-top: 9em;
-  }
   .main-card {
     width: 70%;
   }
   .Intro h2 {
-    font-size: 1.3em;
-    line-height: 1.3rem;
+    font-size: 1.5em;
+    line-height: 1.5rem;
   }
   .ctn-cta p {
-    font-size: 0.8em;
+    font-size: 1.1em;
   }
   .cta a {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 }
 
-@media (max-width: 768px) {
-  .Header h1 {
-    font-size: 1.5em;
-    margin: 0.5em;
+@media (max-width: 850px) {
+  .Header {
+    width: 50%;
   }
-  .img-ctn {
-    width: 80%;
+  .main-ctn {
+    margin-top: 4em;
+  }
+  .main-card {
+    flex-direction: column-reverse;
+    width: 90%;
+    height: 25em;
   }
   .Intro {
-    width: 80%;
+    width: 70%;
   }
-  .Intro h2 {
-    font-size: 2em;
+  .img-ctn {
+    width: 30%;
   }
   .cta {
     width: 50%;
   }
   .Footer {
-    height: 20vh;
+    height: 15vh;
+  }
+  .Footer h2 {
+    font-size: 1em;
   }
 }
 
 /* Pour les smartphones (écrans plus petits) */
-@media (max-width: 480px) {
-  .Header {
-    width: 100%;
-  }
-  .Header h1 {
-    font-size: 1.2em;
-    margin: 0.3em;
+@media (max-width: 700px) {
+  .Intro {
+    padding: 1em;
+    width: 80%;
+    height: 8em;
+    margin: 1em;
   }
   .img-ctn {
-    width: 100%;
+    width: 40%;
   }
-  .Intro {
+  .cta a {
+    margin-bottom: 0.5em;
+  }
+}
+@media (max-width: 510px) {
+  .Header-ctn {
     width: 90%;
   }
+  .Header h1 {
+    font-size: 1rem;
+    line-height: 0.8rem;
+  }
+  .Header p {
+    font-size: 0.7em;
+  }
+  .main-card {
+    height: auto;
+  }
+  .Intro {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    margin: 0.5em;
+  }
   .Intro h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
+    line-height: 1.3rem;
   }
-  .cta {
-    width: 70%;
+  .Intro p {
+    font-size: 1.1em;
   }
-  .Footer {
-    height: 25vh;
+  .cta a {
+    font-size: 1em;
+  }
+}
+@media (max-width: 380px) {
+  .Intro h2 {
+    font-size: auto;
+    line-height: 1rem;
+  }
+  .Intro p {
+    font-size: 0.9em;
+  }
+  .cta a {
+    font-size: 1em;
   }
 }

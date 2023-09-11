@@ -58,3 +58,26 @@
     font-size: 0.8rem;
   }
 }
+@media (max-width: 850px) {
+  .ctn-header {
+    top: 1em;
+  }
+  .ctn-header .nav .nav-links {
+    flex-direction: row;
+  }
+  .ctn-header .nav .nav-links .links {
+    margin: 0;
+  }
+  .ctn-header .nav .nav-links .links a {
+    padding: 0.625rem;
+    flex-direction: row;
+  }
+}
+@media (max-width: 370px) {
+  .ctn-header .nav .nav-links .links a {
+    font-size: 0.7rem;
+  }
+  .ctn-header .nav .nav-links .links a {
+    padding: 0.45rem;
+  }
+}

@@ -20,7 +20,7 @@ function Skills() {
             <p>MonoDB</p>
             <p>Google reCaptcha</p>
           </div>
-          <div className="img-ctn">
+          <div className="img-skill">
             <img src={skillsImage} alt="Description"></img>
           </div>
           <div className="ctn-skill">
@@ -38,12 +38,6 @@ function Skills() {
             Moi c'est Nicolas, développeur web fullstack. Aupavant j'ai efféctué
             plusieurs années dans l'hôtellerie, où mes compétences et mon sens
             du relationnelle mon permis d'être chef de réception.
-          </p>
-          <p>
-            Je met désormais mes connaissances et mon expertise du relationnel
-            client allié à mes compétences technique de développeur fullstack au
-            service du développement web, qui a toujours été un centre
-            d'intérêt.
           </p>
           <span>Nicolas Vivier.</span>
         </div>
