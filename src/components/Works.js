@@ -12,9 +12,6 @@ function Works() {
       </div>
       <div className="grid-ctn">
         <div className="works-grid">
-          <div className="work-card"></div>
-          <div className="work-card"></div>
-          <div className="work-card"></div>
           <div className="work-card">
             <h2>Optimisation SEO</h2>
             <a
@@ -30,7 +27,38 @@ function Works() {
 
             <p>Optimisation des photos et de leurs chargements.</p>
             <p>Gestion du cache sur mesure via Service Worker</p>
-            <p>Révision des mots clefs</p>
+          </div>
+          <div className="work-card">
+            <h2>Optimisation SEO</h2>
+            <a
+              href="https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={SEO}
+                alt="Screen shot du site web optimisé de Nina Carducci."
+              ></img>
+            </a>
+
+            <p>Optimisation des photos et de leurs chargements.</p>
+            <p>Gestion du cache sur mesure via Service Worker</p>
+          </div>
+          <div className="work-card">
+            <h2>Optimisation SEO</h2>
+            <a
+              href="https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={SEO}
+                alt="Screen shot du site web optimisé de Nina Carducci."
+              ></img>
+            </a>
+
+            <p>Optimisation des photos et de leurs chargements.</p>
+            <p>Gestion du cache sur mesure via Service Worker</p>
           </div>
         </div>
       </div>

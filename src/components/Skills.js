@@ -7,7 +7,7 @@ function Skills() {
       <div className="Header-ctn">
         <div className="Header2">
           <h1>Mes compétences</h1>
-          <p>Technologies maitrisé à votre disposition</p>
+          <p>Technologies à votre disposition</p>
         </div>
       </div>
       <div className="main-ctn2">
@@ -28,7 +28,7 @@ function Skills() {
             <p>HTML & CSS</p>
             <p>JavaScript Vanilla</p>
             <p>React</p>
-            <p>Sass</p>
+            <p>Blender</p>
             <p>Optimisation SEO</p>
           </div>
         </div>

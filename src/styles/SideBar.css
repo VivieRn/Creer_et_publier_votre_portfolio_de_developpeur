@@ -41,3 +41,20 @@
 .ctn-header .nav .nav-links .links a:hover {
   background-color: #31e143;
 }
+
+@media (max-width: 1350px) {
+  .ctn-header {
+    left: 2em;
+  }
+  .ctn-header .nav .nav-links .links a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1100px) {
+  .ctn-header {
+    left: 1em;
+  }
+  .ctn-header .nav .nav-links .links a {
+    font-size: 0.8rem;
+  }
+}

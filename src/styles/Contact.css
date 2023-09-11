@@ -95,3 +95,21 @@
   background-color: #31e143;
   color: #444;
 }
+
+@media (max-width: 1400px) {
+  .Header4 h1 {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 1350px) {
+  .Header4 h1 {
+    font-size: 1.6em;
+  }
+  .Header4 p {
+    font-size: 0.8em;
+  }
+  .form-group label {
+    font-size: 1em;
+  }
+}

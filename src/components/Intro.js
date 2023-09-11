@@ -13,7 +13,7 @@ function Intro() {
             <Logo3D />
             <h1>Developpeur fullstack freelance</h1>
           </div>
-          <p>Get your own customize business web site.</p>
+          <p>Créateur de site web sur mesure</p>
         </div>
       </div>
       <div className="main-ctn">

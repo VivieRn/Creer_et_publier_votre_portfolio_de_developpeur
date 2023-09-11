@@ -10,7 +10,7 @@ function Contact() {
       <div className="Header-ctn">
         <div className="Header4">
           <h1>Me contacter</h1>
-          <p>Vous avez des questions ? Un projet ? Demandez !</p>
+          <p>Des questions ? Un projet ? Demandez !</p>
         </div>
       </div>
       <div className="contact">
@@ -65,7 +65,7 @@ function Contact() {
         </form>
       </div>
       <div className="Footer4">
-        <h2>Design & développement par Nicolas VIVIER</h2>
+        <h2>Design & développement par Nicolas Vivier.</h2>
       </div>
     </div>
   );
