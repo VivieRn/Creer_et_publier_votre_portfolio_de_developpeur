@@ -6,6 +6,7 @@
 .pnp.js
 /Back/node_modules
 /Back/.env
+/Back/logs
 /Back/logs/app.log
 
 # testing
