@@ -1,3 +1,5 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import NotFound from "./NotFound"; // Ajustez le chemin si nécessaire
 import "../styles/App.css";
 import SideBar from "./SideBar";
 import Intro from "./Intro";
@@ -5,26 +7,46 @@ import Skills from "./Skills";
 import Works from "./Works";
 import Contact from "./Contact";
 import useScrollHooks from "./UseScrollHooks.js";
+import React from "react";
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 function App() {
   const { sectionRefs } = useScrollHooks();
+  const [isNotFound, setIsNotFound] = React.useState(false);
 
   return (
-    <div className="App">
-      <SideBar />
-      <div ref={sectionRefs[0]} className="element">
-        <Intro />
+    <Router>
+      <div className="App">
+        {!isNotFound && <SideBar />}
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div>
+                <div ref={sectionRefs[0]} className="element">
+                  <Intro />
+                </div>
+                <div ref={sectionRefs[1]} className="element">
+                  <Skills />
+                </div>
+                <div ref={sectionRefs[2]} className="element">
+                  <Works />
+                </div>
+                <div ref={sectionRefs[3]} className="element">
+                  <GoogleReCaptchaProvider reCaptchaKey="6LfGlf8nAAAAAJskZXeNk5ufYSUG00POyBKyL-hD">
+                    <Contact />
+                  </GoogleReCaptchaProvider>
+                </div>
+              </div>
+            }
+          />
+          <Route
+            path="*"
+            element={<NotFound setIsNotFound={setIsNotFound} />}
+          />
+        </Routes>
       </div>
-      <div ref={sectionRefs[1]} className="element">
-        <Skills />
-      </div>
-      <div ref={sectionRefs[2]} className="element">
-        <Works />
-      </div>
-      <div ref={sectionRefs[3]} className="element">
-        <Contact />
-      </div>
-    </div>
+    </Router>
   );
 }
 

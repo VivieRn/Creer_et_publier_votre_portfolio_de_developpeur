@@ -1,9 +1,35 @@
 import "../styles/Contact.css";
+import React from "react";
+import { sendMessage } from "./sendMessage";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 function Contact() {
-  function handleSubmit(event) {
+  const { executeRecaptcha } = useGoogleReCaptcha();
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
-  }
+
+    const email = event.target.email.value;
+    const subject = event.target.subject.value;
+    const message = event.target.message.value;
+
+    if (!email || !subject || !message) {
+      alert("Veuillez remplir tous les champs avant de soumettre.");
+      return;
+    }
+
+    if (!executeRecaptcha) {
+      console.log("Recaptcha has not been loaded yet.");
+      return;
+    }
+
+    try {
+      const token = await executeRecaptcha("contact_form");
+      sendMessage(new FormData(event.target), token);
+    } catch (error) {
+      alert("Erreur lors du traitement du formulaire. Veuillez réessayer.");
+    }
+  };
 
   return (
     <div id="contactSection">
