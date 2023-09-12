@@ -191,6 +191,12 @@
   }
 }
 @media (max-width: 380px) {
+  .skills-column {
+    width: 90%;
+  }
+  .ctn-skill {
+    margin: 0.5em;
+  }
   .ctn-skill h2 {
     font-size: 0.8em;
   }
@@ -199,6 +205,17 @@
   }
   .Citation {
     font-size: 0.7em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
+@media (max-width: 360px) {
+  .Header2 h1 {
+    font-size: 0.8em;
+    line-height: 0.8rem;
+  }
+  .Header2 p {
+    font-size: 0.5em;
   }
 }
 /* Special Nest hub */

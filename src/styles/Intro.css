@@ -270,8 +270,11 @@
   }
 }
 @media (max-width: 380px) {
+  .Header p {
+    font-size: 0.5em;
+  }
   .Intro h2 {
-    font-size: auto;
+    font-size: 1em;
     line-height: 1rem;
   }
   .Intro p {
@@ -279,5 +282,20 @@
   }
   .cta a {
     font-size: 1em;
+  }
+}
+@media (max-width: 330px) {
+  .Header h1 {
+    font-size: 0.9rem;
+  }
+  .Intro h2 {
+    font-size: 0.8em;
+    line-height: 1rem;
+  }
+  .Intro p {
+    font-size: 0.7em;
+  }
+  .cta a {
+    font-size: 0.8em;
   }
 }

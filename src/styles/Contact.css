@@ -73,17 +73,19 @@
 }
 
 .form-group input[type="submit"] {
-  background-color: grey;
-  color: aliceblue;
-  padding: 1em;
-  cursor: pointer;
-  border-radius: 0.5rem;
+  padding: 0.5em;
+  background-color: #31e143;
+  color: #444;
+  font-size: 1em;
   transition: background-color 0.2s;
+  border: 0.125rem solid #444;
+  border-radius: 1rem;
+  cursor: pointer;
 }
 
 .form-group input[type="submit"]:hover {
-  background-color: #31e143;
-  color: black;
+  background-color: #fff;
+  border: #31e143 2px solid;
 }
 
 .Footer4 {
@@ -155,6 +157,11 @@
   }
   .form-group label {
     font-size: 0.8em;
+  }
+}
+@media (max-width: 450px) {
+  .Header4 p {
+    font-size: 0.5em;
   }
 }
 /* Special Nest hub */

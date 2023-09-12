@@ -39,7 +39,8 @@
 }
 
 .ctn-header .nav .nav-links .links a:hover {
-  background-color: #31e143;
+  background-color: #fff;
+  color: #31e143;
 }
 
 @media (max-width: 1350px) {

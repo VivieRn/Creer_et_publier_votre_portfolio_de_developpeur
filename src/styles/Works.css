@@ -152,6 +152,26 @@
     width: 50%;
   }
 }
+@media (max-width: 400px) {
+  .grid-ctn {
+    width: 95%;
+  }
+  .work-card p {
+    display: none;
+  }
+  .work-card img {
+    width: 100%;
+  }
+}
+@media (max-width: 380px) {
+  .Header3 h1 {
+    font-size: 0.8em;
+    line-height: 0.8rem;
+  }
+  .Header3 p {
+    font-size: 0.5em;
+  }
+}
 /* Special Nest hub */
 @media (width: 1024px) and (height: 600px) {
   .works-grid {
