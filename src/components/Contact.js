@@ -2,9 +2,11 @@ import "../styles/Contact.css";
 import React from "react";
 import { sendMessage } from "./sendMessage";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import { useNavigate } from "react-router-dom";
 
 function Contact() {
   const { executeRecaptcha } = useGoogleReCaptcha();
+  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -25,8 +27,10 @@ function Contact() {
 
     try {
       const token = await executeRecaptcha("contact_form");
-      sendMessage(new FormData(event.target), token);
+
+      sendMessage(new FormData(event.target), token, navigate);
     } catch (error) {
+      console.error("Recaptcha error:", error);
       alert("Erreur lors du traitement du formulaire. Veuillez réessayer.");
     }
   };

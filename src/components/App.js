@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import NotFound from "./NotFound"; // Ajustez le chemin si nécessaire
+import NotFound from "./NotFound";
+import EmailSuccess from "./EmailSuccess";
+import EmailError from "./EmailError";
 import "../styles/App.css";
 import SideBar from "./SideBar";
 import Intro from "./Intro";
@@ -39,6 +41,14 @@ function App() {
                 </div>
               </div>
             }
+          />
+          <Route
+            path="email-success"
+            element={<EmailSuccess setIsNotFound={setIsNotFound} />}
+          />
+          <Route
+            path="email-error"
+            element={<EmailError setIsNotFound={setIsNotFound} />}
           />
           <Route
             path="*"

@@ -1,4 +1,4 @@
-export function sendMessage(formData, recaptchaToken) {
+export function sendMessage(formData, recaptchaToken, callback) {
   formData.append("recaptchaToken", recaptchaToken);
 
   fetch("/send-email", {
@@ -11,12 +11,12 @@ export function sendMessage(formData, recaptchaToken) {
     .then((response) => response.json())
     .then((data) => {
       if (data.status === "success") {
-        alert("E-mail envoyé avec succès!");
+        callback("/email-success");
       } else {
-        alert("Erreur lors de l’envoi de l’e-mail: " + data.message);
+        callback("/email-error");
       }
     })
     .catch(() => {
-      alert("Erreur lors de la connexion au serveur.");
+      callback("/email-error");
     });
 }
