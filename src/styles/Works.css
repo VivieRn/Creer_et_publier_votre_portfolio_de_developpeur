@@ -59,6 +59,10 @@
   width: 90%;
   border-radius: 0.3125rem;
 }
+.kasa {
+  background-color: #fff;
+  padding: 0.5em;
+}
 .work-card p {
   color: #fff;
   text-align: left;
