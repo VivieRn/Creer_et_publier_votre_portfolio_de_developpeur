@@ -7,33 +7,6 @@
   align-items: center;
 }
 
-.Header4 {
-  width: 35%;
-  background: #31e143;
-  margin-top: 1em;
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 1rem;
-  line-height: 0;
-}
-
-.Header4 h1 {
-  width: 25%;
-  color: #444;
-  font-size: 2em;
-  margin-bottom: 0;
-  margin-top: 0;
-  line-height: 1.5rem;
-  text-align: left;
-}
-
-.Header4 p {
-  color: #fff;
-  line-height: 0;
-}
-
 .contact {
   display: flex;
   justify-content: center;
@@ -88,57 +61,19 @@
   border: #31e143 2px solid;
 }
 
-.Footer4 {
-  position: absolute;
-  width: 100%;
-  height: 15vh;
-  bottom: 0;
-  left: 0;
-  background-color: #31e143;
-  color: #444;
-}
-
-@media (max-width: 1400px) {
-  .Header4 h1 {
-    font-size: 1.8em;
-  }
-}
-
 @media (max-width: 1350px) {
-  .Header4 h1 {
-    font-size: 1.6em;
-  }
-  .Header4 p {
-    font-size: 0.8em;
-  }
   .form-group label {
     font-size: 1em;
   }
 }
 @media (max-width: 850px) {
-  .Header4 {
-    width: 50%;
-  }
   .contact {
     margin-top: 4em;
-  }
-  .Footer4 {
-    height: 15vh;
-  }
-  .Footer4 h2 {
-    font-size: 1em;
   }
 }
 @media (max-width: 580px) {
   .contact {
     margin-top: 5em;
-  }
-  .Header4 h1 {
-    font-size: 1em;
-    line-height: 0.8rem;
-  }
-  .Header4 p {
-    font-size: 0.7em;
   }
   .form-group {
     margin-bottom: 0.5em;
@@ -157,11 +92,6 @@
   }
   .form-group label {
     font-size: 0.8em;
-  }
-}
-@media (max-width: 450px) {
-  .Header4 p {
-    font-size: 0.5em;
   }
 }
 /* Special Nest hub */

@@ -1,5 +1,7 @@
 import "../styles/Contact.css";
 import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
 import { sendMessage } from "./sendMessage";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { useNavigate } from "react-router-dom";
@@ -37,12 +39,12 @@ function Contact() {
 
   return (
     <div id="contactSection">
-      <div className="Header-ctn">
-        <div className="Header4">
-          <h1>Me contacter</h1>
-          <p>Des questions ? Un projet ? Demandez !</p>
-        </div>
-      </div>
+      <Header
+        title="Me contacter"
+        subtitle="Des questions ? Un projet ? Demandez !"
+        showLogo={false}
+      />
+
       <div className="contact">
         <form
           action="/send-email"
@@ -94,9 +96,10 @@ function Contact() {
           </div>
         </form>
       </div>
-      <div className="Footer4">
-        <h2>Design & développement par Nicolas Vivier.</h2>
-      </div>
+      <Footer
+        title="Design & developemment by Nicolas Vivier"
+        showArrow={false}
+      />
     </div>
   );
 }

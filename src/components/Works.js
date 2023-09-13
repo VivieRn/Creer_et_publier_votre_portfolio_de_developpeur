@@ -1,16 +1,17 @@
 import "../styles/Works.css";
+import Header from "./Header";
+import Footer from "./Footer";
 import SEO from "../assets/SEO.webp";
 import Kasa from "../assets/kasa-logo.svg";
 
 function Works() {
   return (
     <div id="worksSection">
-      <div className="Header-ctn">
-        <div className="Header3">
-          <h1>Mes Travaux</h1>
-          <p>Aperçu des projets que j'ai réalisé.</p>
-        </div>
-      </div>
+      <Header
+        title="Mes Travaux"
+        subtitle="Aperçu des projets que j'ai réalisé."
+        showLogo={false}
+      />
       <div className="grid-ctn">
         <div className="works-grid">
           <div className="work-card">
@@ -60,10 +61,7 @@ function Works() {
           </div>
         </div>
       </div>
-      <div className="Footer3">
-        <h2>Contact</h2>
-        <i className="fa fa-arrow-down"></i>
-      </div>
+      <Footer title="Me contacter" showArrow={true} />
     </div>
   );
 }

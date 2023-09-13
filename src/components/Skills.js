@@ -1,15 +1,16 @@
 import "../styles/Skills.css";
 import skillsImage from "../assets/image_2.png";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function Skills() {
   return (
     <div id="skillsSection">
-      <div className="Header-ctn">
-        <div className="Header2">
-          <h1>Mes compétences</h1>
-          <p>Technologies à votre disposition</p>
-        </div>
-      </div>
+      <Header
+        title="Mes compétences"
+        subtitle="Technologies à votre disposition"
+        showLogo={false}
+      />
       <div className="main-ctn2">
         <div className="skills-column">
           <div className="ctn-skill">
@@ -42,10 +43,7 @@ function Skills() {
           <span>Nicolas Vivier.</span>
         </div>
       </div>
-      <div className="Footer2">
-        <h2>Mes travaux</h2>
-        <i className="fa fa-arrow-down"></i>
-      </div>
+      <Footer title="Mes travaux" showArrow={true} />
     </div>
   );
 }

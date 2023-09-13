@@ -2,20 +2,17 @@ import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 import "../styles/Intro.css";
 import mainImage from "../assets/image_1.png";
-import Logo3D from "./Logo3D.js";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function Intro() {
   return (
     <div className="About" id="aboutSection">
-      <div className="Header-ctn">
-        <div className="Header">
-          <div className="logo3D">
-            <Logo3D />
-            <h1>Developpeur fullstack freelance</h1>
-          </div>
-          <p>Créateur de site web sur mesure</p>
-        </div>
-      </div>
+      <Header
+        title="Développeur fullstack freelance"
+        subtitle="Créateur de site web sur mesure"
+        showLogo={true}
+      />
       <div className="main-ctn">
         <div className="main-card">
           <div className="Intro">
@@ -40,10 +37,7 @@ function Intro() {
           </div>
         </div>
       </div>
-      <div className="Footer">
-        <h2>Mes compétences</h2>
-        <i className="fa fa-arrow-down"></i>
-      </div>
+      <Footer title="Mes compétences" showArrow={true} />
     </div>
   );
 }
