@@ -1,5 +1,5 @@
 import "../styles/Skills.css";
-import skillsImage from "../assets/image_2.png";
+import skillsImage from "../assets/image_2.webp";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -22,7 +22,10 @@ function Skills() {
             <p>Google reCaptcha</p>
           </div>
           <div className="img-skill">
-            <img src={skillsImage} alt="Description"></img>
+            <img
+              src={skillsImage}
+              alt="Image symbolisant le développement"
+            ></img>
           </div>
           <div className="ctn-skill">
             <h2>Front End</h2>

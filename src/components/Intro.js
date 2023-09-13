@@ -1,7 +1,7 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 import "../styles/Intro.css";
-import mainImage from "../assets/image_1.png";
+import mainImage from "../assets/image_1.webp";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -33,7 +33,10 @@ function Intro() {
             </div>
           </div>
           <div className="img-ctn">
-            <img src={mainImage} alt="Description"></img>
+            <img
+              src={mainImage}
+              alt="Image symbolisant la puissance d'un bon site web"
+            ></img>
           </div>
         </div>
       </div>

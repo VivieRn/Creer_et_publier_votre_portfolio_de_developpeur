@@ -39,6 +39,8 @@
 }
 
 .img-skill img {
+  max-width: 355px;
+  max-height: 355px;
   width: 100%;
 }
 .Citation {

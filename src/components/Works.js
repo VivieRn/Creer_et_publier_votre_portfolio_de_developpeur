@@ -1,8 +1,9 @@
 import "../styles/Works.css";
 import Header from "./Header";
 import Footer from "./Footer";
-import SEO from "../assets/SEO.webp";
-import Kasa from "../assets/kasa-logo.svg";
+import SEO from "../assets/works/SEO.webp";
+import KASA from "../assets/works/kasa.webp";
+import Github from "../assets/works/Github.webp";
 
 function Works() {
   return (
@@ -37,27 +38,23 @@ function Works() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="kasa" src={Kasa} alt="Logo de Kasa."></img>
+              <img src={KASA} alt="Logo de Kasa."></img>
             </a>
 
             <p>Création de composants modulable.</p>
             <p>Gestion efficace des routes</p>
           </div>
           <div className="work-card">
-            <h2>Optimisation SEO</h2>
+            <h2>Mon Github</h2>
             <a
-              href="https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/"
+              href="https://github.com/VivieRn"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src={SEO}
-                alt="Screen shot du site web optimisé de Nina Carducci."
-              ></img>
+              <img src={Github} alt="Screen shot de mon Github"></img>
             </a>
 
-            <p>Optimisation des photos et de leurs chargements.</p>
-            <p>Gestion du cache sur mesure via Service Worker</p>
+            <p>Retrouvez tous mes projets.</p>
           </div>
         </div>
       </div>

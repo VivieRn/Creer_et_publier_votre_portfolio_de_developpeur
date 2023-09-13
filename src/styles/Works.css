@@ -33,12 +33,10 @@
   color: #444;
 }
 .work-card img {
-  width: 90%;
+  max-width: 325px;
+  max-height: 155px;
+  width: 100%;
   border-radius: 0.3125rem;
-}
-.kasa {
-  background-color: #fff;
-  padding: 0.5em;
 }
 .work-card p {
   color: #fff;
