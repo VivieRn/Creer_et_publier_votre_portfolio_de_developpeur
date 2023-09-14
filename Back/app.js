@@ -13,14 +13,14 @@ const emailController = require("./components/emailController.js");
 const app = express();
 
 // Définition du chemin vers les fichiers statiques
-const staticFilePath = path.join(__dirname, "../build");
+const staticFilePath = path.join(__dirname, "../public_html");
 
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Configuration CORS
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "http://localhost:4000");
+  res.header("Access-Control-Allow-Origin", "https://nicolas-vivier.com");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
@@ -45,6 +45,10 @@ app.use(express.static(staticFilePath));
 
 // Route pour envoyer un email
 app.post("/send-email", emailController);
+
+app.get("/test", (req, res) => {
+  res.send("Test route is working");
+});
 
 // Gestion d'erreur 404
 app.get("*", (req, res) => {

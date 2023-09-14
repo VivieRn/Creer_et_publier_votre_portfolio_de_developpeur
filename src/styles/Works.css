@@ -17,29 +17,31 @@
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(3, auto);
-  background-color: #f6f6f6;
-  border-radius: 1.25rem;
+  background-color: #444;
+  border-radius: 0.625rem;
   gap: 2em;
   padding: 2em;
 }
 .work-card {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
-  background-color: #31e143;
+  background-color: #fff;
   box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.5);
-  border-radius: 0.625rem;
   height: auto;
   width: auto;
-  color: #444;
+  color: #53cf60;
 }
 .work-card img {
   max-width: 325px;
   max-height: 155px;
-  width: 100%;
+  width: 90%;
   border-radius: 0.3125rem;
+  border: 0.125rem solid rgba(0, 0, 0, 0.3);
+}
+.work-card img:hover {
+  border: 0.125rem solid #53cf60;
 }
 .work-card p {
-  color: #fff;
+  color: #444;
   text-align: left;
   margin: 0.625rem;
   margin-left: 0.9375rem;
@@ -86,7 +88,7 @@
 }
 @media (max-width: 540px) {
   .grid-ctn {
-    margin-top: 4.5em;
+    margin-top: 5em;
   }
   .work-card h2 {
     font-size: 0.8em;

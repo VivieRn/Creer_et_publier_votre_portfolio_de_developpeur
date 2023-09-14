@@ -3,7 +3,7 @@ import NotFound from "./NotFound";
 import EmailSuccess from "./EmailSuccess";
 import EmailError from "./EmailError";
 import "../styles/App.css";
-import SideBar from "./SideBar";
+
 import Intro from "./Intro";
 import Skills from "./Skills";
 import Works from "./Works";
@@ -14,12 +14,11 @@ import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 function App() {
   const { sectionRefs } = useScrollHooks();
-  const [isNotFound, setIsNotFound] = React.useState(false);
+  const [setIsNotFound] = React.useState(false);
 
   return (
     <Router>
       <div className="App">
-        {!isNotFound && <SideBar />}
         <Routes>
           <Route
             path="/"
@@ -35,7 +34,7 @@ function App() {
                   <Works />
                 </div>
                 <div ref={sectionRefs[3]} className="element">
-                  <GoogleReCaptchaProvider reCaptchaKey="6LfGlf8nAAAAAJskZXeNk5ufYSUG00POyBKyL-hD">
+                  <GoogleReCaptchaProvider reCaptchaKey="6LdeyCEoAAAAANXQqWJsAfaHawRqLLlMKtizBWw6">
                     <Contact />
                   </GoogleReCaptchaProvider>
                 </div>

@@ -22,10 +22,7 @@ function Skills() {
             <p>Google reCaptcha</p>
           </div>
           <div className="img-skill">
-            <img
-              src={skillsImage}
-              alt="Image symbolisant le développement"
-            ></img>
+            <img src={skillsImage} alt="Symbolise le développement"></img>
           </div>
           <div className="ctn-skill">
             <h2>Front End</h2>
@@ -38,10 +35,11 @@ function Skills() {
         </div>
         <div className="Citation">
           <p>
-            Bonjour ! <br />
-            Moi c'est Nicolas, développeur web fullstack. Aupavant j'ai efféctué
-            plusieurs années dans l'hôtellerie, où mes compétences et mon sens
-            du relationnelle mon permis d'être chef de réception.
+            Spécialisés dans la création de sites web hautement performants et
+            bien référencés, conçus pour propulser votre entreprise vers de
+            nouveaux sommets. Nos services sont conçus pour répondre aux besoins
+            spécifiques de chaque client, garantissant ainsi une solution
+            parfaitement adaptée.
           </p>
           <span>Nicolas Vivier.</span>
         </div>

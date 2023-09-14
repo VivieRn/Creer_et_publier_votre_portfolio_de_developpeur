@@ -1,39 +1,40 @@
 .ctn-header {
-  position: fixed;
-  z-index: 1;
-  top: 3em;
-  left: 3em;
-  transition: background-color 0.3s ease;
+  width: 100%;
 }
 
 .ctn-header .nav {
   height: auto;
-  width: auto;
+  width: 90%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  padding: 1em;
+  flex-direction: row;
+  align-items: center;
   overflow: hidden;
-  background: #53cf60;
-  border-radius: 0.3125rem;
+  background-color: #53cf60;
+  border-radius: 0 0.8rem 0.8rem 0;
 }
 
 .ctn-header .nav .nav-links {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .ctn-header .nav .nav-links .links {
-  margin: 0.625rem 0;
+  margin: 0 0.625rem;
 }
 
 .ctn-header .nav .nav-links .links a {
   text-decoration: none;
-  color: #fff;
+  background-color: #fff;
+  border-radius: 0.2rem;
+  color: #444;
   font-size: 1.125rem;
   padding: 0.625rem;
-  display: block;
   cursor: pointer;
   transition: background-color 0.2s;
 }
@@ -43,42 +44,30 @@
   color: #31e143;
 }
 
-@media (max-width: 1350px) {
-  .ctn-header {
-    left: 2em;
-  }
-  .ctn-header .nav .nav-links .links a {
-    font-size: 1rem;
-  }
-}
 @media (max-width: 1100px) {
-  .ctn-header {
-    left: 1em;
-  }
   .ctn-header .nav .nav-links .links a {
     font-size: 0.8rem;
   }
 }
+
 @media (max-width: 850px) {
-  .ctn-header {
-    top: 1em;
-  }
-  .ctn-header .nav .nav-links {
+  .ctn-header .nav {
+    width: 100%;
+    height: 3em;
+    padding: 0em;
     flex-direction: row;
-  }
-  .ctn-header .nav .nav-links .links {
-    margin: 0;
-  }
-  .ctn-header .nav .nav-links .links a {
-    padding: 0.625rem;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
   }
 }
+
 @media (max-width: 370px) {
   .ctn-header .nav .nav-links .links a {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+    padding: 0.35rem;
   }
-  .ctn-header .nav .nav-links .links a {
-    padding: 0.45rem;
+  .ctn-header .nav .nav-links .links {
+    margin: 0 0.2rem;
   }
 }

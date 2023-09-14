@@ -16,6 +16,8 @@ export default function useScrollHooks() {
 
   const handleWheel = useCallback(
     (e) => {
+      if (Math.abs(e.deltaY) < 50) return;
+
       if (e.deltaY > 0) {
         currentSection.current = Math.min(
           currentSection.current + 1,
@@ -42,26 +44,31 @@ export default function useScrollHooks() {
   const handleTouchEnd = useCallback(
     (e) => {
       const touchEndY = e.changedTouches[0].clientY;
-      const threshold = 30; // seuil pour éviter les déclenchements accidentels
+      const threshold = 30;
       const diffY = initialTouchY.current - touchEndY;
 
-      if (Math.abs(diffY) > threshold) {
-        if (diffY > 0) {
-          currentSection.current = Math.min(
-            currentSection.current + 1,
-            sectionRefs.length - 1
+      setTimeout(() => {
+        if (Math.abs(diffY) > threshold) {
+          if (diffY > 0) {
+            currentSection.current = Math.min(
+              currentSection.current + 1,
+              sectionRefs.length - 1
+            );
+          } else {
+            currentSection.current = Math.max(currentSection.current - 1, 0);
+          }
+
+          scroll.scrollTo(
+            sectionRefs[currentSection.current].current.offsetTop,
+            {
+              duration: 800,
+              smooth: "easeInOutQuart",
+            }
           );
-        } else {
-          currentSection.current = Math.max(currentSection.current - 1, 0);
         }
 
-        scroll.scrollTo(sectionRefs[currentSection.current].current.offsetTop, {
-          duration: 800,
-          smooth: "easeInOutQuart",
-        });
-      }
-
-      initialTouchY.current = 0; // réinitialiser la position touchée initiale
+        initialTouchY.current = 0;
+      }, 100);
     },
     [sectionRefs]
   );

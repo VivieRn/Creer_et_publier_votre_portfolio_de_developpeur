@@ -1,7 +1,6 @@
 {
   "name": "web-portfolio-nv",
-  "homepage": "http://localhost:3000",
-  "proxy": "http://localhost:4000",
+  "homepage": "https://nicolas-vivier.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -17,7 +17,7 @@
   justify-content: center;
   align-items: center;
   width: 70%;
-  background: linear-gradient(90deg, #444, #aaaaaa, #e7e7e7, #fff);
+  background: #444;
   border-radius: 0.3125rem;
   padding: 1em;
 }
@@ -31,19 +31,22 @@
   max-width: 450px;
   width: 100%;
   max-height: 450px;
+  border: 0.125rem solid #53cf60;
 }
 
 .Intro {
   width: 50%;
+  height: auto;
   padding: 1em;
   box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.5);
+  background-color: #fff;
   display: flex;
   align-items: center;
   margin-right: 1em;
 }
 
 .Intro h2 {
-  color: #31e143;
+  color: #53cf60;
   font-size: 2.8em;
   height: auto;
   width: auto;
@@ -58,6 +61,7 @@
   text-align: left;
   font-size: 1.3em;
   margin: 0;
+  margin-left: 0.5em;
   margin-bottom: 1em;
   line-height: 1.25rem;
 }
@@ -70,23 +74,22 @@
 
 .cta a {
   padding: 0.5em;
-  background-color: #31e143;
-  color: #444;
-  font-size: 1em;
+  background-color: #fff;
+  border: 0.125rem solid #53cf60;
+  color: #53cf60;
+  font-size: 1.5em;
   transition: background-color 0.2s;
-  border: 0.125rem solid #444;
   border-radius: 1rem;
   cursor: pointer;
 }
 
 .cta a:hover {
-  background-color: #fff;
-  border: 0.125rem solid #31e143;
+  color: #444;
 }
 
 @media (max-width: 1400px) {
   .main-card {
-    width: 60%;
+    width: 80%;
   }
   .Intro h2 {
     font-size: 2.2em;
@@ -107,14 +110,14 @@
 }
 @media (max-width: 1150px) {
   .main-card {
-    width: 70%;
+    width: 80%;
   }
   .Intro h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: 1.5rem;
   }
   .ctn-cta p {
-    font-size: 1.1em;
+    font-size: 1em;
   }
   .cta a {
     font-size: 1em;
@@ -131,24 +134,24 @@
     height: 25em;
   }
   .Intro {
-    width: 70%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    margin: 0.5em;
   }
   .img-ctn {
     width: 30%;
   }
   .cta {
-    width: 50%;
+    width: auto;
+  }
+  .grecaptcha-badge {
+    transform: scale(0.8);
   }
 }
 
 /* Pour les smartphones (écrans plus petits) */
 @media (max-width: 700px) {
-  .Intro {
-    padding: 1em;
-    width: 80%;
-    height: 8em;
-    margin: 1em;
-  }
   .img-ctn {
     width: 40%;
   }
@@ -159,12 +162,6 @@
 @media (max-width: 510px) {
   .main-card {
     height: auto;
-  }
-  .Intro {
-    width: auto;
-    height: auto;
-    flex-direction: column;
-    margin: 0.5em;
   }
   .Intro h2 {
     font-size: 1.3em;

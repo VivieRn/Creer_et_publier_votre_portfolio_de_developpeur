@@ -41,7 +41,7 @@ function Contact() {
     <div id="contactSection">
       <Header
         title="Me contacter"
-        subtitle="Des questions ? Un projet ? Demandez !"
+        subtitle="La transformation commence"
         showLogo={false}
       />
 
@@ -52,6 +52,7 @@ function Contact() {
           id="contactForm"
           onSubmit={handleSubmit}
         >
+          <h2>Passez à la vitesse supérieure dès aujourd'hui !</h2>
           <div className="form-group">
             <label htmlFor="email">E-mail :</label>
             <input
@@ -70,7 +71,7 @@ function Contact() {
               id="subject"
               name="subject"
               required
-              placeholder="Entrez le sujet de votre message."
+              placeholder="Optimisation de mon site ... | Je n'ai pas de site ... "
             />
           </div>
 
@@ -82,7 +83,7 @@ function Contact() {
               rows="5"
               cols="60"
               required
-              placeholder="Rédigez votre message ici."
+              placeholder="Décrivez qui vous êtes, votre besoin et vos idées."
             ></textarea>
           </div>
 
