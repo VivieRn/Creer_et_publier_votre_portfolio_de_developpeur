@@ -1,22 +1,22 @@
 export function sendMessage(formData, recaptchaToken, callback) {
   formData.append("recaptchaToken", recaptchaToken);
 
-  fetch("/send-email", {
+  fetch("https://85.31.237.165:3000/api/send-email", {
     method: "POST",
     headers: {
-      "Content-Type": "application/json",
+      "Content-Type": "multipart/form-data",
     },
-    body: JSON.stringify(Object.fromEntries(formData)),
+    body: formData,
   })
     .then((response) => response.json())
     .then((data) => {
       if (data.status === "success") {
-        callback("/email-success");
+        callback("/api/email-success");
       } else {
-        callback("/email-error");
+        callback("/api/email-error");
       }
     })
     .catch(() => {
-      callback("/email-error");
+      callback("/api/email-error");
     });
 }

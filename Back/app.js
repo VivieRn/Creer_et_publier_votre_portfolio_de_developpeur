@@ -13,7 +13,7 @@ const emailController = require("./components/emailController.js");
 const app = express();
 
 // Définition du chemin vers les fichiers statiques
-const staticFilePath = path.join(__dirname, "../public_html");
+const staticFilePath = path.join(__dirname, "../html");
 
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -44,9 +44,9 @@ app.use(checkRequest);
 app.use(express.static(staticFilePath));
 
 // Route pour envoyer un email
-app.post("/send-email", emailController);
+app.post("/api/send-email", emailController);
 
-app.get("/test", (req, res) => {
+app.get("/api/test", (req, res) => {
   res.send("Test route is working");
 });
 
