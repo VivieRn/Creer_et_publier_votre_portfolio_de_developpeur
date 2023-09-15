@@ -159,16 +159,22 @@
     margin-bottom: 0.5em;
   }
 }
+@media (max-width: 580px) {
+  .main-ctn {
+    margin-top: 1em;
+  }
+}
 @media (max-width: 510px) {
   .main-card {
     height: auto;
+    padding: 0.5rem;
   }
   .Intro h2 {
     font-size: 1.3em;
     line-height: 1.3rem;
   }
   .Intro p {
-    font-size: 1.1em;
+    font-size: 1em;
   }
   .cta a {
     font-size: 1em;

@@ -25,9 +25,10 @@
 }
 .contact h2 {
   color: #53cf60;
+  margin-top: 0;
 }
 .form-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
 }
 
 .form-group label {
@@ -51,6 +52,7 @@
 
 .form-group input[type="submit"] {
   padding: 0.5em;
+  margin-top: 0.5em;
   background-color: #fff;
   border: 0.125rem solid #53cf60;
   color: #53cf60;
@@ -81,7 +83,7 @@
 }
 @media (max-width: 580px) {
   .contact {
-    margin-top: 5em;
+    margin-top: 1em;
   }
   .contact h2 {
     font-size: 1em;
@@ -106,6 +108,12 @@
 }
 /* Special Nest hub */
 @media (width: 1024px) and (height: 600px) {
+  .contact {
+    margin-top: 0.5em;
+  }
+  .contact h2 {
+    font-size: 1em;
+  }
   .form-group {
     margin-bottom: 0.5em;
   }
@@ -120,6 +128,10 @@
   .form-group textarea {
     padding: 0.5rem;
     height: 5em;
+  }
+  .form-group input[type="submit"] {
+    font-size: 0.9em;
+    margin: 0;
   }
   .form-group label {
     font-size: 0.8em;

@@ -88,7 +88,7 @@
 }
 @media (max-width: 540px) {
   .grid-ctn {
-    margin-top: 5em;
+    margin-top: 1em;
   }
   .work-card h2 {
     font-size: 0.8em;
@@ -98,14 +98,19 @@
   }
 }
 @media (max-width: 400px) {
-  .grid-ctn {
-    width: 95%;
+  .works-grid {
+    gap: 1em;
+    padding: 1em;
+  }
+
+  .work-card h2 {
+    font-size: 0.7em;
   }
   .work-card p {
-    display: none;
+    font-size: 0.6em;
   }
   .work-card img {
-    width: 100%;
+    width: 90%;
   }
 }
 /* Special Nest hub */

@@ -62,7 +62,7 @@
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 380px) {
   .ctn-header .nav .nav-links .links a {
     font-size: 0.6rem;
     padding: 0.35rem;
