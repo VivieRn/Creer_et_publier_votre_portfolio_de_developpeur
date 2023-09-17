@@ -50,6 +50,11 @@ app.get("/api/test", (req, res) => {
   res.send("Test route is working");
 });
 
+app.use(
+  "/.well-known/acme-challenge",
+  express.static(path.join(__dirname, "../html/.well-known/acme-challenge"))
+);
+
 // Gestion d'erreur 404
 app.get("*", (req, res) => {
   res.sendFile(path.join(staticFilePath, "index.html"));

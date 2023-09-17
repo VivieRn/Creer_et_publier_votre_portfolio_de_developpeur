@@ -1,12 +1,17 @@
 export function sendMessage(formData, recaptchaToken, callback) {
-  formData.append("recaptchaToken", recaptchaToken);
+  const data = {
+    email: formData.get("email"),
+    subject: formData.get("subject"),
+    message: formData.get("message"),
+    recaptchaToken: recaptchaToken,
+  };
 
-  fetch("https://85.31.237.165:3000/api/send-email", {
+  fetch("/api/sendEmail", {
     method: "POST",
     headers: {
-      "Content-Type": "multipart/form-data",
+      "Content-Type": "application/json",
     },
-    body: formData,
+    body: JSON.stringify(data),
   })
     .then((response) => response.json())
     .then((data) => {
