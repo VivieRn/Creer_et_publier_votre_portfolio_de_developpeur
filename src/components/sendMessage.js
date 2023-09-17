@@ -15,13 +15,15 @@ export function sendMessage(formData, recaptchaToken, callback) {
   })
     .then((response) => response.json())
     .then((data) => {
+      console.log("Response Data: ", data);
       if (data.status === "success") {
-        callback("/api/email-success");
+        window.location.href = "/email-success";
       } else {
-        callback("/api/email-error");
+        window.location.href = "/email-error";
       }
     })
-    .catch(() => {
-      callback("/api/email-error");
+    .catch((error) => {
+      console.log("Error: ", error);
+      window.location.href = "/email-error";
     });
 }

@@ -14,7 +14,6 @@ import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 function App() {
   const { sectionRefs } = useScrollHooks();
-  const [setIsNotFound] = React.useState(false);
 
   return (
     <Router>
@@ -41,18 +40,9 @@ function App() {
               </div>
             }
           />
-          <Route
-            path="email-success"
-            element={<EmailSuccess setIsNotFound={setIsNotFound} />}
-          />
-          <Route
-            path="email-error"
-            element={<EmailError setIsNotFound={setIsNotFound} />}
-          />
-          <Route
-            path="*"
-            element={<NotFound setIsNotFound={setIsNotFound} />}
-          />
+          <Route path="email-success" element={<EmailSuccess />} />
+          <Route path="email-error" element={<EmailError />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </Router>

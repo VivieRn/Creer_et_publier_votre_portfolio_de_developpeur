@@ -4,14 +4,7 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
-function EmailSuccess({ setIsNotFound }) {
-  React.useEffect(() => {
-    setIsNotFound(true);
-
-    return () => {
-      setIsNotFound(false);
-    };
-  }, [setIsNotFound]);
+function EmailSuccess() {
   return (
     <div>
       <Header

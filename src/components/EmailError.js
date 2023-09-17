@@ -4,14 +4,7 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
-function EmailError({ setIsNotFound }) {
-  React.useEffect(() => {
-    setIsNotFound(true);
-
-    return () => {
-      setIsNotFound(false);
-    };
-  }, [setIsNotFound]);
+function EmailError() {
   return (
     <div>
       <Header

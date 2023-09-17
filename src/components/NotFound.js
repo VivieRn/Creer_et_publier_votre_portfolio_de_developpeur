@@ -4,14 +4,7 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
-function NotFound({ setIsNotFound }) {
-  React.useEffect(() => {
-    setIsNotFound(true);
-
-    return () => {
-      setIsNotFound(false);
-    };
-  }, [setIsNotFound]);
+function NotFound() {
   return (
     <div>
       <Header
@@ -22,7 +15,7 @@ function NotFound({ setIsNotFound }) {
       <div className="NotFound-ctn">
         <div className="NotFound">
           <h1>404</h1>
-          <p>La page que vous demandez n'esxiste pas.</p>
+          <p>La page que vous demandez n'existe pas.</p>
           <a href="/">Retour à l'accueil</a>
         </div>
       </div>
