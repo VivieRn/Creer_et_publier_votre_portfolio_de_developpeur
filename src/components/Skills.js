@@ -17,9 +17,7 @@ function Skills() {
             <h2>Back End</h2>
             <p>Node JS</p>
             <p>Express JS</p>
-            <p>Brevo</p>
-            <p>MonoDB</p>
-            <p>Google reCaptcha</p>
+            <p>MongoDB</p>
           </div>
           <div className="img-skill">
             <img src={skillsImage} alt="Symbolise le développement"></img>
@@ -27,17 +25,19 @@ function Skills() {
           <div className="ctn-skill">
             <h2>Front End</h2>
             <p>HTML & CSS</p>
+            <p>SCSS</p>
             <p>JavaScript Vanilla</p>
             <p>React</p>
-            <p>Blender</p>
+            <p>Vercel</p>
             <p>Optimisation SEO</p>
+            <p>Blender</p>
           </div>
         </div>
         <div className="Citation">
           <p>
             Spécialisés dans la création de sites web hautement performants et
-            bien référencés, conçus pour propulser votre entreprise vers de
-            nouveaux sommets. Nos services sont conçus pour répondre aux besoins
+            responsive, conçus pour propulser votre entreprise vers de nouveaux
+            sommets. Mes services sont conçus pour répondre aux besoins
             spécifiques de chaque client, garantissant ainsi une solution
             parfaitement adaptée.
           </p>

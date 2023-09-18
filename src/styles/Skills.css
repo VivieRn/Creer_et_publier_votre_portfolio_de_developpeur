@@ -67,6 +67,21 @@
   margin-right: 10em;
 }
 
+@media (max-height: 790px) {
+  .ctn-skill h2 {
+    font-size: 1.2em;
+  }
+  .ctn-skill p {
+    font-size: 0.8em;
+  }
+  .Citation {
+    font-size: 0.8em;
+  }
+  .img-skill img {
+    width: 70%;
+  }
+}
+
 @media (max-width: 1000px) {
   .ctn-skill {
     margin: 1em;

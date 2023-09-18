@@ -3,7 +3,6 @@ import NotFound from "./NotFound";
 import EmailSuccess from "./EmailSuccess";
 import EmailError from "./EmailError";
 import "../styles/App.css";
-
 import Intro from "./Intro";
 import Skills from "./Skills";
 import Works from "./Works";

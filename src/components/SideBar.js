@@ -9,7 +9,7 @@ function SideBar() {
         <ul className="nav-links">
           <li className="links">
             <ScrollLink to="aboutSection" smooth={true} duration={500}>
-              A propos
+              Accueil
             </ScrollLink>
           </li>
           <li className="links">

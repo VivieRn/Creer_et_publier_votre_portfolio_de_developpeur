@@ -10,7 +10,7 @@ function Intro() {
   return (
     <div className="About" id="aboutSection">
       <Header
-        title="Développeur fullstack freelance"
+        title="Développeur frontend freelance"
         subtitle="Transformez votre présence en ligne"
         showLogo={true}
       />
@@ -22,10 +22,10 @@ function Intro() {
             <div className="ctn-cta">
               <div className="center">
                 <p>
-                  Vous avez besoin d'un site web performant ?Vous en avez assé
-                  de votre site qui rame et n'est pas bien référencé ? Vous
-                  souhaitez toucher plus de personnes et développer votre
-                  activité ? La solution n'est qu'à un clique !
+                  Vous avez besoin d'une interface utilisateur dynamique et
+                  performante ? Vous avez besoin d'une intégration web
+                  responsive ? Vous cherchez quelqu'un de motivé et sérieux afin
+                  de compléter votre équipe ? La solution n'est qu'à un clique !
                 </p>
                 <div className="cta">
                   <ScrollLink to="contactSection" smooth={true} duration={500}>
