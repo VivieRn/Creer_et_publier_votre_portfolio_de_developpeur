@@ -8,9 +8,10 @@ function NotFound() {
   return (
     <div>
       <Header
-        title="Développeur fullstack freelance"
+        title="Développeur frontend freelance"
         subtitle="Créateur de site web sur mesure"
         showLogo={true}
+        showSideBar={false}
       />
       <div className="NotFound-ctn">
         <div className="NotFound">

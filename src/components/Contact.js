@@ -43,6 +43,7 @@ function Contact() {
         title="Me contacter"
         subtitle="La transformation commence"
         showLogo={false}
+        showSideBar={true}
       />
 
       <div className="contact">
@@ -71,7 +72,7 @@ function Contact() {
               id="subject"
               name="subject"
               required
-              placeholder="Optimisation de mon site ... | Je n'ai pas de site ... "
+              placeholder="Mission Frontend ... "
             />
           </div>
 
@@ -83,7 +84,7 @@ function Contact() {
               rows="5"
               cols="60"
               required
-              placeholder="Décrivez qui vous êtes, votre besoin et vos idées."
+              placeholder="Décrivez qui vous êtes, vos problématiques et vos besoins."
             ></textarea>
           </div>
 

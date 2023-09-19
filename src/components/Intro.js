@@ -13,6 +13,7 @@ function Intro() {
         title="Développeur frontend freelance"
         subtitle="Transformez votre présence en ligne"
         showLogo={true}
+        showSideBar={true}
       />
 
       <div className="main-ctn">

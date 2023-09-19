@@ -10,6 +10,7 @@ function Skills() {
         title="Mes compétences"
         subtitle="Technologies à votre disposition"
         showLogo={false}
+        showSideBar={true}
       />
       <div className="main-ctn2">
         <div className="skills-column">
@@ -30,7 +31,7 @@ function Skills() {
             <p>React</p>
             <p>Vercel</p>
             <p>Optimisation SEO</p>
-            <p>Blender</p>
+            <p>Blender & ThreeJS</p>
           </div>
         </div>
         <div className="Citation">

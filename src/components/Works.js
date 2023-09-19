@@ -12,6 +12,7 @@ function Works() {
         title="Mes Travaux"
         subtitle="Aperçu des projets que j'ai réalisé."
         showLogo={false}
+        showSideBar={true}
       />
       <div className="grid-ctn">
         <div className="works-grid">
