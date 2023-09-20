@@ -36,3 +36,9 @@
 .NotFound a:hover {
   color: #444;
 }
+
+@media (max-width: 850px) {
+  .card {
+    width: 80%;
+  }
+}

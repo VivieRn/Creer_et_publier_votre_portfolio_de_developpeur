@@ -14,13 +14,15 @@ function EmailError() {
         showSideBar={false}
       />
       <div className="NotFound-ctn">
-        <div className="NotFound">
-          <h1>Erreur lors de l’envoi du message.</h1>
-          <p>
-            Une erreur s'est produite, mais ce n'est pas la fin de l'aventure
-            pour autant !
-          </p>
-          <a href="/">Retour à l'accueil</a>
+        <div className="card">
+          <div className="NotFound">
+            <h1>Erreur lors de l’envoi du message.</h1>
+            <p>
+              Une erreur s'est produite, mais ce n'est pas la fin de l'aventure
+              pour autant !
+            </p>
+            <a href="/">Retour à l'accueil</a>
+          </div>
         </div>
       </div>
       <Footer
