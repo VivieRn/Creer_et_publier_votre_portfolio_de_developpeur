@@ -48,7 +48,7 @@
   border: 0.125rem solid #53cf60;
 }
 .Citation {
-  width: 60%;
+  width: 68%;
   background-color: #444;
   color: #fff;
   border-radius: 0.3125rem;
@@ -57,14 +57,13 @@
   padding: 1em;
   padding-top: 0;
   text-align: left;
-  line-height: 1.125rem;
+  line-height: 1.1rem;
   font-size: 1.2em;
 }
 .Citation span {
   font-style: italic;
   display: flex;
   flex-direction: row-reverse;
-  margin-right: 10em;
 }
 
 @media (max-height: 790px) {
@@ -95,7 +94,7 @@
 }
 @media (max-width: 850px) {
   .main-ctn2 {
-    margin-top: 5em;
+    margin-top: 0.5em;
     margin-bottom: 0;
   }
   .skills-column {

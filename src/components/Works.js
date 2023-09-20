@@ -28,9 +28,24 @@ function Works() {
                 alt="Screen shot du site web optimisé de Nina Carducci."
               ></img>
             </a>
-
+            <p>
+              <strong>Améliorations :</strong>
+            </p>
             <p>Optimisation des photos et de leurs chargements.</p>
             <p>Gestion du cache sur mesure via Service Worker</p>
+            <p>
+              <strong>Problématique :</strong>
+            </p>
+            <p>Plugin buggé et obsoléte</p>
+            <p>
+              <strong>Solution :</strong>
+            </p>
+            <p>Création plugin javaScript sur mesure</p>
+            <p>
+              <strong>Compétences acquises :</strong>
+            </p>
+            <p>Utilisation outils d'audit</p>
+            <p>Optimisation technique</p>
           </div>
           <div className="work-card">
             <h2>Création React</h2>
@@ -41,9 +56,24 @@ function Works() {
             >
               <img src={KASA} alt="Logo de Kasa."></img>
             </a>
-
+            <p>
+              <strong>Améliorations :</strong>
+            </p>
             <p>Création de composants modulable.</p>
             <p>Gestion efficace des routes</p>
+            <p>
+              <strong>Problématique :</strong>
+            </p>
+            <p>Gérer les collapsible boxes</p>
+            <p>
+              <strong>Solution :</strong>
+            </p>
+            <p>Utilisation des props react dans un module d'interface</p>
+            <p>
+              <strong>Compétences acquises :</strong>
+            </p>
+            <p>Utilisation React</p>
+            <p>Gestion de la navigation</p>
           </div>
           <div className="work-card">
             <h2>Mon Github</h2>

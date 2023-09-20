@@ -26,7 +26,7 @@ function Intro() {
                   Vous avez besoin d'une interface utilisateur dynamique et
                   performante ? Vous avez besoin d'une intégration web
                   responsive ? Vous cherchez quelqu'un de motivé et sérieux afin
-                  de compléter votre équipe ? La solution n'est qu'à un clique !
+                  de compléter votre équipe ? La solution n'est qu'à un clic !
                 </p>
                 <div className="cta">
                   <ScrollLink to="contactSection" smooth={true} duration={500}>

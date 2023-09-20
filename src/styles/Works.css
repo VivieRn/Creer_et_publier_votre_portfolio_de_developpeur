@@ -10,10 +10,10 @@
 .grid-ctn {
   display: flex;
   justify-content: center;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 .works-grid {
-  width: 80%;
+  width: 90%;
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(3, auto);
@@ -46,25 +46,10 @@
   text-align: left;
   margin: 0.625rem;
   margin-left: 0.9375rem;
-  line-height: 0.9375rem;
+  line-height: 0.9rem;
 }
 
-@media (max-width: 1490px) {
-  .works-grid {
-    width: 60%;
-  }
-}
-
-@media (max-width: 1200px) {
-  .grid-ctn {
-    width: auto;
-    height: auto;
-  }
-}
-@media (max-width: 1100px) {
-  .works-grid {
-    grid-template-columns: repeat(2, auto);
-  }
+@media (max-height: 850px) {
   .work-card h2 {
     font-size: 1em;
   }
@@ -73,50 +58,67 @@
   }
   .work-card img {
     width: 60%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .work-card h2 {
+    font-size: 1em;
+  }
+  .work-card p {
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+  }
+  .work-card img {
+    width: 60%;
   }
 }
 @media (max-width: 850px) {
-  .grid-ctn {
-    margin-top: 3em;
-  }
-  .works-grid {
-    width: 80%;
-    height: auto;
-  }
   .work-card img {
     width: 50%;
   }
 }
-@media (max-width: 540px) {
-  .grid-ctn {
-    margin-top: 1em;
-  }
-  .work-card h2 {
-    font-size: 0.8em;
-  }
-  .work-card img {
-    width: 50%;
-  }
-}
-@media (max-width: 400px) {
+@media (max-width: 650px) {
   .works-grid {
-    gap: 1em;
-    padding: 1em;
+    grid-template-columns: repeat(2, auto);
+    gap: 0.5em;
+    padding: 0.5em;
   }
-
   .work-card h2 {
     font-size: 0.7em;
   }
   .work-card p {
     font-size: 0.6em;
+    margin-left: 0.5rem;
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
   }
   .work-card img {
-    width: 90%;
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .work-card img {
+    width: 50%;
+    padding: 0;
+  }
+  .work-card h2 {
+    font-size: 0.6em;
+    margin: 0;
+    margin-bottom: 0.2em;
   }
 }
 /* Special Nest hub */
 @media (width: 1024px) and (height: 600px) {
-  .works-grid {
-    grid-template-columns: repeat(3, auto);
+  .work-card h2 {
+    font-size: 0.8em;
+  }
+  .work-card p {
+    font-size: 0.6em;
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
   }
 }

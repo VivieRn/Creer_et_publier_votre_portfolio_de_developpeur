@@ -98,10 +98,7 @@ function Contact() {
           </div>
         </form>
       </div>
-      <Footer
-        title="Design & developemment by Nicolas Vivier"
-        showArrow={false}
-      />
+      <Footer title="Development by Nicolas Vivier" showArrow={false} />
     </div>
   );
 }

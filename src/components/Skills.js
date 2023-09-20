@@ -37,8 +37,8 @@ function Skills() {
         <div className="Citation">
           <p>
             Spécialisés dans la création de sites web hautement performants et
-            responsive, conçus pour propulser votre entreprise vers de nouveaux
-            sommets. Mes services sont conçus pour répondre aux besoins
+            responsifs, conçus pour propulser votre entreprise vers de nouveaux
+            sommets, mes services sont conçus pour répondre aux besoins
             spécifiques de chaque client, garantissant ainsi une solution
             parfaitement adaptée.
           </p>
