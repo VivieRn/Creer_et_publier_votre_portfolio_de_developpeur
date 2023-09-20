@@ -14,10 +14,12 @@ function NotFound() {
         showSideBar={false}
       />
       <div className="NotFound-ctn">
-        <div className="NotFound">
-          <h1>404</h1>
-          <p>La page que vous demandez n'existe pas.</p>
-          <a href="/">Retour à l'accueil</a>
+        <div className="card">
+          <div className="NotFound">
+            <h1>404</h1>
+            <p>La page que vous demandez n'existe pas.</p>
+            <a href="/">Retour à l'accueil</a>
+          </div>
         </div>
       </div>
       <Footer
