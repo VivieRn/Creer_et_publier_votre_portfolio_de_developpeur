@@ -26,6 +26,7 @@ function Works() {
               <img
                 src={SEO}
                 alt="Screen shot du site web optimisé de Nina Carducci."
+                loading="lazy"
               ></img>
             </a>
             <p>
@@ -54,7 +55,7 @@ function Works() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={KASA} alt="Logo de Kasa."></img>
+              <img src={KASA} alt="Logo de Kasa." loading="lazy"></img>
             </a>
             <p>
               <strong>Améliorations :</strong>
@@ -82,7 +83,11 @@ function Works() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={Github} alt="Screen shot de mon Github"></img>
+              <img
+                src={Github}
+                alt="Screen shot de mon Github"
+                loading="lazy"
+              ></img>
             </a>
 
             <p>Retrouvez tous mes projets.</p>

@@ -50,7 +50,10 @@
   box-sizing: border-box;
   resize: vertical;
 }
-
+.formError {
+  display: none;
+  color: red;
+}
 .form-group input[type="submit"] {
   padding: 0.5em;
   margin-top: 0.5em;

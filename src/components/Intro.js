@@ -40,6 +40,7 @@ function Intro() {
             <img
               src={mainImage}
               alt="Symbolise la puissance d'un bon site web"
+              loading="lazy"
             ></img>
           </div>
         </div>

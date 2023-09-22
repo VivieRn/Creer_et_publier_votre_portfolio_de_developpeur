@@ -21,7 +21,11 @@ function Skills() {
             <p>MongoDB</p>
           </div>
           <div className="img-skill">
-            <img src={skillsImage} alt="Symbolise le développement"></img>
+            <img
+              src={skillsImage}
+              alt="Symbolise le développement"
+              loading="lazy"
+            ></img>
           </div>
           <div className="ctn-skill">
             <h2>Front End</h2>

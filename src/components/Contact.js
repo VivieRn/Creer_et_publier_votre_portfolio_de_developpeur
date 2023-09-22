@@ -18,12 +18,18 @@ function Contact() {
     const message = event.target.message.value;
 
     if (!email || !subject || !message) {
-      alert("Veuillez remplir tous les champs avant de soumettre.");
+      const errorElement = document.querySelector(".formError");
+      if (errorElement) {
+        errorElement.style.display = "block";
+      }
       return;
     }
 
     if (!executeRecaptcha) {
-      console.log("Recaptcha has not been loaded yet.");
+      const errorElement = document.querySelector(".formError");
+      if (errorElement) {
+        errorElement.style.display = "block";
+      }
       return;
     }
 
@@ -32,8 +38,11 @@ function Contact() {
 
       sendMessage(new FormData(event.target), token, navigate);
     } catch (error) {
-      console.error("Recaptcha error:", error);
-      alert("Erreur lors du traitement du formulaire. Veuillez réessayer.");
+      const errorElement = document.querySelector(".formError");
+      if (errorElement) {
+        errorElement.style.display = "block";
+      }
+      return;
     }
   };
 
@@ -88,6 +97,12 @@ function Contact() {
             ></textarea>
           </div>
 
+          <div className="formError">
+            <p>
+              Une erreur est survenue, veuillez remplir tous les champs avant
+              l'envoie.
+            </p>
+          </div>
           <div className="form-group">
             <input
               type="submit"
