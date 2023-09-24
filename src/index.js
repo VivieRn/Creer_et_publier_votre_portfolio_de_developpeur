@@ -6,17 +6,21 @@ import reportWebVitals from "./reportWebVitals.js";
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function () {
-    navigator.serviceWorker
-      .register("/service-worker.js")
-      .then(function (registration) {
-        console.log(
-          "ServiceWorker registration successful with scope:",
-          registration.scope
-        );
-      })
-      .catch(function (err) {
-        console.log("ServiceWorker registration failed:", err);
-      });
+    if (navigator.serviceWorker.controller) {
+      return;
+    } else {
+      navigator.serviceWorker
+        .register("/service-worker.js")
+        .then(function (registration) {
+          console.log(
+            "ServiceWorker registration successful with scope:",
+            registration.scope
+          );
+        })
+        .catch(function (err) {
+          console.log("ServiceWorker registration failed:", err);
+        });
+    }
   });
 }
 

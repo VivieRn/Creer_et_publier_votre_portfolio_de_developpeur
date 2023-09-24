@@ -19,7 +19,7 @@ function Intro() {
       <div className="main-ctn">
         <div className="main-card">
           <div className="Intro">
-            <h2>Vous avez besoin d'un site web performant ?</h2>
+            <h1>Vous avez besoin d'un site web performant ?</h1>
             <div className="ctn-cta">
               <div className="center">
                 <p>
@@ -40,7 +40,6 @@ function Intro() {
             <img
               src={mainImage}
               alt="Symbolise la puissance d'un bon site web"
-              loading="lazy"
             ></img>
           </div>
         </div>

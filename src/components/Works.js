@@ -37,7 +37,7 @@ function Works() {
             <p>
               <strong>Problématique :</strong>
             </p>
-            <p>Plugin buggé et obsoléte</p>
+            <p>Plug-in bloqué et obsolète</p>
             <p>
               <strong>Solution :</strong>
             </p>
@@ -45,7 +45,7 @@ function Works() {
             <p>
               <strong>Compétences acquises :</strong>
             </p>
-            <p>Utilisation outils d'audit</p>
+            <p>Utilisation d'outils d'audit</p>
             <p>Optimisation technique</p>
           </div>
           <div className="work-card">
@@ -60,7 +60,7 @@ function Works() {
             <p>
               <strong>Améliorations :</strong>
             </p>
-            <p>Création de composants modulable.</p>
+            <p>Création de composants modulables.</p>
             <p>Gestion efficace des routes</p>
             <p>
               <strong>Problématique :</strong>
@@ -89,7 +89,6 @@ function Works() {
                 loading="lazy"
               ></img>
             </a>
-
             <p>Retrouvez tous mes projets.</p>
           </div>
         </div>

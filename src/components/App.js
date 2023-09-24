@@ -3,11 +3,11 @@ import "../styles/App.css";
 import useScrollHooks from "./UseScrollHooks.js";
 import React, { Suspense } from "react";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+import Intro from "./Intro";
 
 const NotFound = React.lazy(() => import("./NotFound"));
 const EmailSuccess = React.lazy(() => import("./EmailSuccess"));
 const EmailError = React.lazy(() => import("./EmailError"));
-const Intro = React.lazy(() => import("./Intro"));
 const Skills = React.lazy(() => import("./Skills"));
 const Works = React.lazy(() => import("./Works"));
 const Contact = React.lazy(() => import("./Contact"));

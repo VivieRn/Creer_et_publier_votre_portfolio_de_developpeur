@@ -42,7 +42,7 @@ function Skills() {
           <p>
             Spécialisés dans la création de sites web hautement performants et
             responsifs, conçus pour propulser votre entreprise vers de nouveaux
-            sommets, mes services sont conçus pour répondre aux besoins
+            sommets, mes services sont élaborés pour répondre aux besoins
             spécifiques de chaque client, garantissant ainsi une solution
             parfaitement adaptée.
           </p>
