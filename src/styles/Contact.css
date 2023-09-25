@@ -79,15 +79,13 @@
   .contact {
     width: 90%;
     padding: 0.5em;
+    margin-top: 1em;
   }
   .contact h2 {
     font-size: 1.2em;
   }
 }
 @media (max-width: 580px) {
-  .contact {
-    margin-top: 1em;
-  }
   .contact h2 {
     font-size: 1em;
   }
