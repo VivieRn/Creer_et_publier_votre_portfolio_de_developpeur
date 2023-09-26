@@ -69,7 +69,16 @@
 .form-group input[type="submit"]:hover {
   color: #444;
 }
-
+@media (max-height: 850px) {
+  .contact {
+    width: 90%;
+    padding: 0.5em;
+    margin-top: 1em;
+  }
+  .contact h2 {
+    font-size: 1.2em;
+  }
+}
 @media (max-width: 1350px) {
   .form-group label {
     font-size: 1em;

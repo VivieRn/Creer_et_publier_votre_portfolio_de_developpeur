@@ -3,7 +3,7 @@
 const whitelistedOrigins = ["https://nicolas-vivier.com/"];
 
 // Version du Service Worker
-const version = "v1-nicolas-vivier.com";
+const version = "v1.2-nicolas-vivier.com";
 
 // Fichiers à mettre en cache
 const filesToCache = [
@@ -16,8 +16,8 @@ const filesToCache = [
 ];
 
 function isWhitelistedOrigin(request) {
-  const origin = request.origin || request.url;
-  return whitelistedOrigins.some((url) => origin.startsWith(url));
+  const origin = request.origin || new URL(request.url).origin;
+  return whitelistedOrigins.includes(origin);
 }
 
 self.addEventListener("install", function (event) {
@@ -57,23 +57,32 @@ self.addEventListener("activate", function (event) {
 });
 
 self.addEventListener("fetch", function (event) {
+  if (!isWhitelistedOrigin(event.request)) {
+    event.respondWith(fetch(event.request));
+    return;
+  }
+
   event.respondWith(
     caches.open(version).then(function (cache) {
-      return cache.match(event.request).then(function (response) {
-        return (
-          response ||
-          fetch(event.request)
-            .then(function (networkResponse) {
-              if (isWhitelistedOrigin(event.request)) {
-                cache.put(event.request, networkResponse.clone());
-              }
-              return networkResponse;
-            })
-            .catch(function (error) {
-              console.error("Fetch failed:", error);
-              throw error;
-            })
-        );
+      return cache.match(event.request).then(function (cachedResponse) {
+        var fetchPromise = fetch(event.request)
+          .then(function (networkResponse) {
+            if (
+              !cachedResponse ||
+              (networkResponse.headers.get("ETag") &&
+                networkResponse.headers.get("ETag") !==
+                  cachedResponse.headers.get("ETag"))
+            ) {
+              cache.put(event.request, networkResponse.clone());
+            }
+            return networkResponse;
+          })
+          .catch(function (error) {
+            console.error("Fetch failed:", error);
+            throw error;
+          });
+
+        return cachedResponse || fetchPromise;
       });
     })
   );
