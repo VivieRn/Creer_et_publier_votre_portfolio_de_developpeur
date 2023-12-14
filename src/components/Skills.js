@@ -1,56 +1,44 @@
 import "../styles/Skills.css";
-import skillsImage from "../assets/image_2.png";
 
 function Skills() {
   return (
     <div id="skillsSection">
-      <div className="Header-ctn">
-        <div className="Header2">
-          <h1>Mes compétences</h1>
-          <p>Technologies maitrisé à votre disposition</p>
-        </div>
-      </div>
       <div className="main-ctn2">
         <div className="skills-column">
           <div className="ctn-skill">
             <h2>Back End</h2>
             <p>Node JS</p>
             <p>Express JS</p>
-            <p>Brevo</p>
-            <p>MonoDB</p>
-            <p>Google reCaptcha</p>
-          </div>
-          <div className="img-ctn">
-            <img src={skillsImage} alt="Description"></img>
+            <p>MongoDB</p>
           </div>
           <div className="ctn-skill">
             <h2>Front End</h2>
             <p>HTML & CSS</p>
+            <p>SCSS</p>
             <p>JavaScript Vanilla</p>
             <p>React</p>
-            <p>Sass</p>
+            <p>Vercel</p>
             <p>Optimisation SEO</p>
+          </div>
+          <div className="ctn-skill">
+            <h2>Design</h2>
+            <p>Figma</p>
+            <p>Photoshop</p>
+            <p>Illustrator</p>
+            <p>Blender</p>
+            <p>ThreeJS</p>
           </div>
         </div>
         <div className="Citation">
           <p>
-            Bonjour ! <br />
-            Moi c'est Nicolas, développeur web fullstack. Aupavant j'ai efféctué
-            plusieurs années dans l'hôtellerie, où mes compétences et mon sens
-            du relationnelle mon permis d'être chef de réception.
-          </p>
-          <p>
-            Je met désormais mes connaissances et mon expertise du relationnel
-            client allié à mes compétences technique de développeur fullstack au
-            service du développement web, qui a toujours été un centre
-            d'intérêt.
+            Récément diplomé d'un Titre professionnel de Développeur /
+            Intégrateur Web, je cherche à augmenter mes compétences via une
+            formation en alternance dans le webdesign / webmarketing via 3W
+            Academy. La formation est d'une durée de 16 mois avec comme rythme
+            d'alternance : 3 semaines entreprise / 1 semaine école.
           </p>
           <span>Nicolas Vivier.</span>
         </div>
-      </div>
-      <div className="Footer2">
-        <h2>Mes travaux</h2>
-        <i className="fa fa-arrow-down"></i>
       </div>
     </div>
   );

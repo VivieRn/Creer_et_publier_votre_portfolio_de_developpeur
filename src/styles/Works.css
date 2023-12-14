@@ -1,67 +1,110 @@
 #worksSection {
   position: relative;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-.Header3 {
-  width: 25%;
-  background: #31e143;
-  margin-top: 1em;
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  line-height: 0;
-}
-.Header3 h1 {
-  width: 25%;
-  color: #444;
-  font-size: 2em;
-  margin-bottom: 0;
-  margin-top: 0;
-  line-height: 25px;
-  text-align: left;
-}
-.Header3 p {
-  color: #fff;
-  line-height: 0;
-}
+
 .grid-ctn {
   display: flex;
   justify-content: center;
-  margin-top: 2em;
+  margin-top: 1em;
+  background-color: #444;
+  width: 100%;
 }
 .works-grid {
-  width: auto;
+  width: 90%;
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(4, 15em);
-  background-color: #f6f6f6;
-  border-radius: 20px;
+  grid-template-columns: repeat(3, auto);
   gap: 2em;
   padding: 2em;
 }
-
 .work-card {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
-  background-color: #31e143;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  height: 20em;
-  width: 15em;
+  background-color: #fff;
+  border: 3px solid black;
+  box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.5);
+  height: auto;
+  width: auto;
+}
+.work-card h2 {
+  border-style: solid;
+  border-width: 7px;
+  border-image: linear-gradient(45deg, black, #53cf60, aliceblue, #444, black) 1;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #53cf60;
+  background-color: rgb(46, 46, 46);
+  margin-top: 0;
+}
+.work-card img {
+  max-width: 325px;
+  max-height: 155px;
+  width: 90%;
+  border-radius: 0.3125rem;
+  border: 0.125rem solid rgba(0, 0, 0, 0.3);
+}
+.work-card img:hover {
+  border: 0.125rem solid #53cf60;
+  opacity: 0.5;
+}
+.work-card p {
+  color: #444;
+  text-align: left;
+  margin: 0.625rem;
+  margin-left: 0.9375rem;
+  line-height: 0.9rem;
 }
 
-.Footer3 {
-  position: absolute;
-  width: 100%;
-  height: 15%;
-  bottom: 0;
-  left: 0;
-  background-color: #31e143;
-  color: #444;
+@media (max-width: 850px) {
+  .work-card img {
+    width: 50%;
+  }
+}
+@media (max-width: 650px) {
+  .works-grid {
+    grid-template-columns: repeat(2, auto);
+    gap: 0.5em;
+    padding: 0.5em;
+  }
+  .work-card h2 {
+    font-size: 0.7em;
+  }
+  .work-card p {
+    font-size: 0.6em;
+    margin-left: 0.5rem;
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+  }
+  .work-card img {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .grid-ctn {
+    margin-top: 0.5em;
+  }
+  .work-card img {
+    width: 50%;
+    padding: 0;
+  }
+  .work-card h2 {
+    font-size: 0.6em;
+    margin: 0;
+    margin-bottom: 0.2em;
+  }
+}
+/* Special Nest hub */
+@media (width: 1024px) and (height: 600px) {
+  .work-card h2 {
+    font-size: 0.8em;
+  }
+  .work-card p {
+    font-size: 0.6em;
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+  }
 }

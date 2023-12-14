@@ -1,0 +1,19 @@
+.legal-part {
+  background-color: #444;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+}
+.legal-part h1 {
+  color: aliceblue;
+  padding-top: 0.5em;
+}
+.legal-card {
+  border: 3px solid black;
+  background: #fff;
+  width: 90%;
+  margin-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}

@@ -1,6 +1,6 @@
-import "font-awesome/css/font-awesome.min.css";
+import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/SideBar.css";
-import { Link as ScrollLink } from "react-scroll";
 
 function SideBar() {
   return (
@@ -8,24 +8,16 @@ function SideBar() {
       <nav className="nav">
         <ul className="nav-links">
           <li className="links">
-            <ScrollLink to="aboutSection" smooth={true} duration={500}>
-              A propos
-            </ScrollLink>
+            <Link to="/">Accueil</Link>
           </li>
           <li className="links">
-            <ScrollLink to="skillsSection" smooth={true} duration={500}>
-              Compétences
-            </ScrollLink>
+            <Link to="/competences">Compétences</Link>
           </li>
           <li className="links">
-            <ScrollLink to="worksSection" smooth={true} duration={500}>
-              Travaux
-            </ScrollLink>
+            <Link to="/travaux">Travaux</Link>
           </li>
           <li className="links">
-            <ScrollLink to="contactSection" smooth={true} duration={500}>
-              Contact
-            </ScrollLink>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>

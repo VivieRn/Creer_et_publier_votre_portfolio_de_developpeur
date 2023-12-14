@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- URL principale -->
+    <url>
+        <loc>https://nicolas-vivier.com/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- URL compétence -->
+    <url>
+        <loc>https://nicolas-vivier.com/competences</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- URL travaux -->
+    <url>
+        <loc>https://nicolas-vivier.com/travaux</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- URL contact -->
+    <url>
+        <loc>https://nicolas-vivier.com/contact</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- URL mentions legales -->
+    <url>
+        <loc>https://nicolas-vivier.com/mentions-légales</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Email Success -->
+    <url>
+        <loc>https://nicolas-vivier.com/email-success</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Email Error -->
+    <url>
+        <loc>https://nicolas-vivier.com/email-error</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
