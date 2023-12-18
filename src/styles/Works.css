@@ -9,17 +9,16 @@
 .grid-ctn {
   display: flex;
   justify-content: center;
-  margin-top: 1em;
   background-color: #444;
   width: 100%;
 }
 .works-grid {
-  width: 90%;
+  width: 75%;
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(2, auto);
   gap: 2em;
-  padding: 2em;
+  padding: 2.3em;
 }
 .work-card {
   position: relative;
@@ -60,27 +59,13 @@
 }
 
 @media (max-width: 850px) {
-  .work-card img {
-    width: 50%;
+  .works-grid {
+    grid-template-columns: repeat(1, auto);
   }
 }
 @media (max-width: 650px) {
-  .works-grid {
-    grid-template-columns: repeat(2, auto);
-    gap: 0.5em;
-    padding: 0.5em;
-  }
-  .work-card h2 {
-    font-size: 0.7em;
-  }
-  .work-card p {
-    font-size: 0.6em;
-    margin-left: 0.5rem;
-    margin-bottom: 0.2em;
-    margin-top: 0.2em;
-  }
   .work-card img {
-    width: 70%;
+    width: 90%;
   }
 }
 @media (max-width: 500px) {
@@ -88,23 +73,12 @@
     margin-top: 0.5em;
   }
   .work-card img {
-    width: 50%;
+    width: 90%;
     padding: 0;
   }
-  .work-card h2 {
-    font-size: 0.6em;
-    margin: 0;
-    margin-bottom: 0.2em;
-  }
 }
-/* Special Nest hub */
-@media (width: 1024px) and (height: 600px) {
-  .work-card h2 {
-    font-size: 0.8em;
-  }
-  .work-card p {
-    font-size: 0.6em;
-    margin-bottom: 0.2em;
-    margin-top: 0.2em;
+@media (max-width: 400px) {
+  .work-card img {
+    width: 90%;
   }
 }

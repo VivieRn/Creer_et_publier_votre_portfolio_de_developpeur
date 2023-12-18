@@ -10,8 +10,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 2em;
-  margin-bottom: 2em;
 }
 .main-card {
   display: flex;
@@ -48,7 +46,7 @@
 }
 
 .Intro h1 {
-  color: #53cf60;
+  color: #4dc059;
   font-size: 2.8em;
   height: auto;
   width: 60%;

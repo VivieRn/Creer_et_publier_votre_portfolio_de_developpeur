@@ -1,7 +1,6 @@
 import "../styles/Works.css";
 import SEO from "../assets/works/SEO.webp";
 import KASA from "../assets/works/kasa.webp";
-import Github from "../assets/works/Github.webp";
 
 function Works() {
   return (
@@ -67,24 +66,6 @@ function Works() {
             </p>
             <p>Utilisation React</p>
             <p>Gestion de la navigation</p>
-          </div>
-          <div className="work-card">
-            <h2>Projet à venir</h2>
-            <a
-              href="https://github.com/VivieRn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={Github}
-                alt="Screen shot de mon Github"
-                loading="lazy"
-              ></img>
-            </a>
-            <p>Projet en cours de développement. </p>
-            <p>Site d'affiliation serverless.</p>
-            <p>fonction de tris sur mesure.</p>
-            <p>UX trix simple & intuitif.</p>
           </div>
         </div>
       </div>

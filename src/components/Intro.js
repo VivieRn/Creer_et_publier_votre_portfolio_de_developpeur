@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Intro.css";
-import mainImage from "../assets/nico-pro-contraste.png";
+import mainImage from "../assets/nico-pro-contraste.webp";
 
 function Intro() {
   return (
