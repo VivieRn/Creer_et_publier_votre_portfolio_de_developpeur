@@ -95,6 +95,22 @@ function NotFound() {
           informations matérielles et logicielles, telles que l'adresse IP de
           l'appareil, pour déterminer si l'interaction est légitime.
         </p>
+        <h2>Hébergement du site</h2>
+        <p>
+          Le site nicolas-vivier.com est hébergé par Vercel Inc.,{" "}
+          <a href="https://vercel.com">vercel.com</a>. Vercel est une plateforme
+          d'hébergement cloud qui assure la sécurité, la performance et
+          l'accessibilité de notre site web. En utilisant notre site, vous
+          reconnaissez et acceptez que les données personnelles recueillies
+          peuvent être stockées et traitées sur les serveurs de Vercel,
+          conformément à leur politique de confidentialité et de sécurité des
+          données. Vercel s'engage à assurer la protection et la confidentialité
+          des données hébergées sur ses serveurs.
+          <br />
+          Pour toute question ou préoccupation concernant l'hébergement de notre
+          site, veuillez nous contacter directement ou vous adresser à Vercel
+          Inc.
+        </p>
         <h2>Vos Droits :</h2>
         <p>
           Vous avez le droit d'accéder, de rectifier ou de demander la

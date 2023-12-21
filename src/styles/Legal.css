@@ -11,8 +11,20 @@
 .legal-card {
   border: 3px solid black;
   background: #fff;
-  width: 90%;
+  box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.5);
+  width: 60%;
   margin-bottom: 1em;
   padding-left: 1em;
   padding-right: 1em;
+}
+@media (max-width: 510px) {
+  .legal-card {
+    width: 80%;
+  }
+  .legal-part h1 {
+    font-size: 1.3em;
+  }
+  .legal-part h2 {
+    font-size: 1.2em;
+  }
 }

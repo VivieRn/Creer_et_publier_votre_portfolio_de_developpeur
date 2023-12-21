@@ -1,34 +1,47 @@
 import "../styles/Contact.css";
 import React from "react";
-import { sendMessage } from "./sendMessage";
+import { SendMessage } from "./sendMessage";
 import { useNavigate } from "react-router-dom";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 function Contact() {
+  const { executeRecaptcha } = useGoogleReCaptcha();
   const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setIsLoading(true); // Activer l'animation
 
     const email = event.target.email.value;
     const subject = event.target.subject.value;
     const message = event.target.message.value;
 
-    if (!email || !subject || !message) {
+    const displayError = () => {
       const errorElement = document.querySelector(".formError");
       if (errorElement) {
         errorElement.style.display = "block";
       }
+    };
+
+    if (!email || !subject || !message) {
+      displayError();
+      return;
+    }
+
+    if (!executeRecaptcha) {
+      displayError();
       return;
     }
 
     try {
-      sendMessage(new FormData(event.target), navigate);
+      const token = await executeRecaptcha("contact_form");
+      SendMessage(new FormData(event.target), token, navigate);
     } catch (error) {
-      const errorElement = document.querySelector(".formError");
-      if (errorElement) {
-        errorElement.style.display = "block";
-      }
+      displayError();
       return;
+    } finally {
+      setIsLoading(false); // Désactiver l'animation
     }
   };
 
@@ -90,6 +103,13 @@ function Contact() {
               name="submitBtn"
             />
           </div>
+          {isLoading && (
+            <div className="loading-animation">
+              <span className="loading-dot"></span>
+              <span className="loading-dot"></span>
+              <span className="loading-dot"></span>
+            </div>
+          )}
         </form>
       </div>
     </div>

@@ -6,10 +6,12 @@ function Footer() {
   return (
     <div className="Footer">
       <h2>Développé par Nicolas Vivier</h2>
-      <a className="legal" href="/mentions-légales">
-        Mentions légales
-      </a>
       <p>Tous droits réservés © 2023</p>
+      <div className="legal-btn">
+        <a className="legal" href="/mentions-legales">
+          Mentions légales
+        </a>
+      </div>
       <div className="logo-ctn">
         <a href="https://www.linkedin.com/in/nicolas-vivier-web-dev/">
           <img className="logo" src={Linkedin} alt="Logo Linkedin"></img>

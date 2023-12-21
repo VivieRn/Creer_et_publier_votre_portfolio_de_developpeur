@@ -26,16 +26,16 @@ function App() {
           <Route path="/" element={<Intro />} />
           <Route path="/competences" element={<Skills />} />
           <Route path="/travaux" element={<Works />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/mentions-légales" element={<Legal />} />
           <Route
-            path="/email-success"
+            path="/contact"
             element={
               <GoogleReCaptchaProvider reCaptchaKey="6LdeyCEoAAAAANXQqWJsAfaHawRqLLlMKtizBWw6">
-                <EmailSuccess />
+                <Contact />
               </GoogleReCaptchaProvider>
             }
           />
+          <Route path="/mentions-legales" element={<Legal />} />
+          <Route path="/email-success" element={<EmailSuccess />} />
           <Route path="/email-error" element={<EmailError />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

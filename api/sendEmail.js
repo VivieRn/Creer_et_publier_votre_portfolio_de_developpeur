@@ -32,7 +32,7 @@ module.exports = async (req, res) => {
     if (!(await verifyRecaptcha(recaptchaToken))) {
       return res
         .status(400)
-        .send({ status: "error", error: "Recaptcha vérification échouée" });
+        .send({ status: "error", error: "Recaptcha vÃ©rification Ã©chouÃ©e" });
     }
 
     let transporter = nodemailer.createTransport({
@@ -58,6 +58,8 @@ module.exports = async (req, res) => {
       res.status(500).send({ status: "error", error: error.message });
     }
   } else {
-    res.status(405).send({ error: "Seules les requêtes POST sont acceptées" });
+    res
+      .status(405)
+      .send({ error: "Seules les requÃªtes POST sont acceptÃ©es" });
   }
 };

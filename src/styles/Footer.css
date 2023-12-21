@@ -9,9 +9,20 @@
 .Footer h2 {
   margin-bottom: 0;
 }
-.legal {
-  color: black;
+.Footer p {
   margin-top: 0.5em;
+  margin-bottom: 0;
+}
+.legal-btn {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.legal {
+  color: #444;
+  text-decoration: none;
+}
+.legal:hover {
+  text-decoration: underline;
 }
 .logo {
   width: 3%;
@@ -39,8 +50,11 @@
     font-size: 0.8em;
     margin: 0.2em;
   }
+  .legal {
+    font-size: 0.8em;
+  }
   .logo {
-    width: 4%;
+    width: 6%;
   }
 }
 @media (max-width: 400px) {

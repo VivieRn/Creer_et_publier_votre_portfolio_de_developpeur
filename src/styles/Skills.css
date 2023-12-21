@@ -71,3 +71,8 @@
     width: 50%;
   }
 }
+@media (max-width: 510px) {
+  .ctn-skill h2 {
+    font-size: 1.2em;
+  }
+}

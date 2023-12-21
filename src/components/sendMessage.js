@@ -1,4 +1,4 @@
-export function sendMessage(formData, recaptchaToken, callback) {
+export function SendMessage(formData, recaptchaToken, navigate) {
   const data = {
     email: formData.get("email"),
     subject: formData.get("subject"),
@@ -17,13 +17,13 @@ export function sendMessage(formData, recaptchaToken, callback) {
     .then((data) => {
       console.log("Response Data: ", data);
       if (data.status === "success") {
-        window.location.href = "/email-success";
+        navigate("/email-success");
       } else {
-        window.location.href = "/email-error";
+        navigate("/email-error");
       }
     })
     .catch((error) => {
       console.log("Error: ", error);
-      window.location.href = "/email-error";
+      navigate("/email-error");
     });
 }
