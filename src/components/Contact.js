@@ -1,5 +1,5 @@
 import "../styles/Contact.css";
-import React from "react";
+import React, { useState } from "react";
 import { SendMessage } from "./sendMessage";
 import { useNavigate } from "react-router-dom";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
@@ -62,7 +62,7 @@ function Contact() {
               id="email"
               name="email"
               required
-              placeholder="Entrez votre e-mail."
+              placeholder="recruteur@entreprise.job"
             />
           </div>
 
@@ -73,7 +73,7 @@ function Contact() {
               id="subject"
               name="subject"
               required
-              placeholder="Mission Frontend ... "
+              placeholder="Proposition d'alternance. "
             />
           </div>
 
@@ -85,7 +85,7 @@ function Contact() {
               rows="5"
               cols="60"
               required
-              placeholder="Décrivez qui vous êtes, vos problématiques et vos besoins."
+              placeholder="Présentation de votre entreprise et de l'offre d'alternance."
             ></textarea>
           </div>
 

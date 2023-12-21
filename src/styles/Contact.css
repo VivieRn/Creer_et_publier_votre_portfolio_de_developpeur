@@ -74,6 +74,12 @@
   color: aliceblue;
   transform: rotateX(360deg);
 }
+.form-group input[type="email"]:focus,
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+  border-radius: 0;
+  border: 3px solid #444;
+}
 @keyframes pulse {
   0%,
   100% {

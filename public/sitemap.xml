@@ -30,7 +30,7 @@
 
     <!-- URL mentions legales -->
     <url>
-        <loc>https://nicolas-vivier.com/mentions-légales</loc>
+        <loc>https://nicolas-vivier.com/mentions-legales</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>

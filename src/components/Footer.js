@@ -5,7 +5,7 @@ import Github from "../assets/logo-github.png";
 function Footer() {
   return (
     <div className="Footer">
-      <h2>Développé par Nicolas Vivier</h2>
+      <h2>Design et développement par Nicolas Vivier</h2>
       <p>Tous droits réservés © 2023</p>
       <div className="legal-btn">
         <a className="legal" href="/mentions-legales">
