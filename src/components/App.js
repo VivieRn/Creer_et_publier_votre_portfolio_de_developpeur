@@ -11,7 +11,6 @@ import EmailSuccess from "./EmailSuccess";
 import EmailError from "./EmailError";
 import NotFound from "./NotFound";
 import Header from "./Header";
-import SideBar from "./SideBar";
 import Footer from "./Footer";
 
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
@@ -21,11 +20,10 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <SideBar />
         <Routes>
           <Route path="/" element={<Intro />} />
           <Route path="/competences" element={<Skills />} />
-          <Route path="/travaux" element={<Works />} />
+          <Route path="/projets" element={<Works />} />
           <Route
             path="/contact"
             element={

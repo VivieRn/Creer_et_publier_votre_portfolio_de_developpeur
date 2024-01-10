@@ -8,13 +8,13 @@ function SideBar() {
       <nav className="nav">
         <ul className="nav-links">
           <li className="links">
-            <Link to="/">Accueil</Link>
+            <Link to="/">Présentation</Link>
           </li>
           <li className="links">
             <Link to="/competences">Compétences</Link>
           </li>
           <li className="links">
-            <Link to="/travaux">Travaux</Link>
+            <Link to="/projets">Projets</Link>
           </li>
           <li className="links">
             <Link to="/contact">Contact</Link>

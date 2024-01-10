@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import "../styles/Header.css";
+import SideBar from "./SideBar";
 
 function Header() {
   const titlesRef = useRef([
@@ -31,9 +33,14 @@ function Header() {
 
   return (
     <div className="Header-ctn">
-      <div className="Header">
-        <h1 className="animated-title">{currentTitle}</h1>
-        <p>Cherche contrat de professionnalisation</p>
+      <Link to="/" style={{ textDecoration: "none" }}>
+        <div className="Header">
+          <h1 className="animated-title">{currentTitle}</h1>
+          <p>Cherche contrat de professionnalisation</p>
+        </div>
+      </Link>
+      <div className="bar">
+        <SideBar />
       </div>
     </div>
   );

@@ -22,7 +22,7 @@ function Skills() {
     <div id="skillsSection">
       <div className="main-ctn2">
         <div className="skills-column">
-          <div className="ctn-skill">
+          <div className="ctn-skill card1">
             <h2>Back End</h2>
             <div className="skill">
               <div className="logo-tech">
@@ -46,7 +46,7 @@ function Skills() {
               <ProgressBar percentage={30} />
             </div>
           </div>
-          <div className="ctn-skill">
+          <div className="ctn-skill card2">
             <h2>Front End</h2>
             <div className="skill">
               <div className="logo-tech">
@@ -98,7 +98,7 @@ function Skills() {
               <ProgressBar percentage={90} />
             </div>
           </div>
-          <div className="ctn-skill">
+          <div className="ctn-skill card3">
             <h2>Design</h2>
             <div className="skill">
               <div className="logo-tech">

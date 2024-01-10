@@ -19,10 +19,13 @@
   border: 3px solid black;
   width: 80%;
   max-width: 37.5rem;
+  margin-top: 2.4em;
+  margin-bottom: 2.5em;
   padding: 2em;
   background: #fff;
   box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.5);
   text-align: left;
+  transform: skew(1.5deg, 0deg);
 }
 .contact h2 {
   color: black;
@@ -64,15 +67,12 @@
   border: 3px solid black;
   color: black;
   font-size: 1em;
-  transition: background-color 1s, transform 1s;
-  border-radius: 1rem;
+  transition: transform 1s;
   cursor: pointer;
 }
 
 .form-group input[type="submit"]:hover {
-  background-color: black;
-  color: aliceblue;
-  transform: rotateX(360deg);
+  transform: skew(0deg, 1deg) scale(1.1);
 }
 .form-group input[type="email"]:focus,
 .form-group input[type="text"]:focus,
@@ -119,10 +119,14 @@
   .form-group textarea {
     height: 12em;
   }
+  .grecaptcha-badge {
+    transform: scale(0.8);
+  }
 }
 @media (max-width: 580px) {
   #contactForm {
     width: 70%;
+    transform: skew(1deg, 0deg);
   }
   .contact h2 {
     font-size: 1em;

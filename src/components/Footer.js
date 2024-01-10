@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/Footer.css";
 import Linkedin from "../assets/logo-linkedin.png";
 import Github from "../assets/logo-github.png";
@@ -8,17 +9,17 @@ function Footer() {
       <h2>Design et développement par Nicolas Vivier</h2>
       <p>Tous droits réservés © 2023</p>
       <div className="legal-btn">
-        <a className="legal" href="/mentions-legales">
+        <Link className="legal" to="/mentions-legales">
           Mentions légales
-        </a>
+        </Link>
       </div>
       <div className="logo-ctn">
-        <a href="https://www.linkedin.com/in/nicolas-vivier-web-dev/">
+        <Link to="https://www.linkedin.com/in/nicolas-vivier-web-dev/">
           <img className="logo" src={Linkedin} alt="Logo Linkedin"></img>
-        </a>
-        <a href="https://github.com/VivieRn">
+        </Link>
+        <Link to="https://github.com/VivieRn">
           <img className="logo" src={Github} alt="Logo Github"></img>
-        </a>
+        </Link>
       </div>
     </div>
   );

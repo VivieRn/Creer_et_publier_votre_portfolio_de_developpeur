@@ -16,10 +16,12 @@
   margin-bottom: 1em;
   padding-left: 1em;
   padding-right: 1em;
+  transform: skew(1deg, 0deg);
 }
 @media (max-width: 510px) {
   .legal-card {
-    width: 80%;
+    width: 60%;
+    transform: skew(0.2deg, 0deg);
   }
   .legal-part h1 {
     font-size: 1.3em;

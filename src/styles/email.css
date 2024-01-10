@@ -12,6 +12,7 @@
   width: 60%;
   height: 20em;
   margin: 4em;
+  transform: skew(1.5deg, 0deg);
 }
 .email {
   margin: 3em;
@@ -31,11 +32,8 @@
   color: black;
   font-size: 1em;
   transition: background-color 1s, transform 1s;
-  border-radius: 1rem;
   cursor: pointer;
 }
 .retry:hover {
-  background-color: black;
-  color: aliceblue;
-  transform: rotateX(360deg);
+  transform: skew(0deg, 1deg) scale(1.1);
 }

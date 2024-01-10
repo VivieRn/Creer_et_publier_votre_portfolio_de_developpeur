@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/Works.css";
 import SEO from "../assets/works/SEO.webp";
 import KASA from "../assets/works/kasa.webp";
@@ -8,64 +9,71 @@ function Works() {
       <div className="grid-ctn">
         <div className="works-grid">
           <div className="work-card">
-            <h2>Optimisation SEO</h2>
-            <a
-              href="https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/"
+            <Link
+              to="https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/"
+              style={{ textDecoration: "none" }}
               target="_blank"
               rel="noopener noreferrer"
             >
+              <h2>Optimisation SEO</h2>
               <img
                 src={SEO}
                 alt="Screen shot du site web optimisé de Nina Carducci."
                 loading="lazy"
               ></img>
-            </a>
-            <p>
-              <strong>Améliorations :</strong>
-            </p>
-            <p>Optimisation des photos et de leurs chargements.</p>
-            <p>Gestion du cache sur mesure via Service Worker</p>
-            <p>
-              <strong>Problématique :</strong>
-            </p>
-            <p>Plug-in bloqué et obsolète</p>
-            <p>
-              <strong>Solution :</strong>
-            </p>
-            <p>Création plugin javaScript sur mesure</p>
-            <p>
-              <strong>Compétences acquises :</strong>
-            </p>
-            <p>Utilisation d'outils d'audit</p>
-            <p>Optimisation technique</p>
+              <div className="caps1">
+                <p>
+                  <strong>Projet OpenClassrooms</strong>
+                </p>
+              </div>
+              <div className="caps2">
+                <p>Amélioration technique du site :</p>
+                <p>• Révision du code HTML</p>
+                <p>• Conversion des photos</p>
+                <p>• Traduction du plugin de gestion des photos</p>
+                <p>• Révision des mots clés</p>
+              </div>
+              <div className="caps3">
+                <p>
+                  <strong>Résultat du projet :</strong>
+                </p>
+                <p>Projet validé avec succès.</p>
+                <p>Note maximale via Lighthouse & Wave.</p>
+                <p>Meilleur référencement obtenu.</p>
+              </div>
+            </Link>
           </div>
           <div className="work-card">
-            <h2>Création React</h2>
-            <a
-              href="https://viviern.github.io/Kasa_React/"
+            <Link
+              to="https://viviern.github.io/Kasa_React/"
+              style={{ textDecoration: "none" }}
               target="_blank"
               rel="noopener noreferrer"
             >
+              <h2>Kasa React App</h2>
               <img src={KASA} alt="Logo de Kasa." loading="lazy"></img>
-            </a>
-            <p>
-              <strong>Améliorations :</strong>
-            </p>
-            <p>Création de composants modulables.</p>
-            <p>Gestion efficace des routes</p>
-            <p>
-              <strong>Problématique :</strong>
-            </p>
-            <p>Gérer les collapsible boxes</p>
-            <p>
-              <strong>Solution :</strong>
-            </p>
-            <p>Utilisation des props react dans un module d'interface</p>
-            <p>
-              <strong>Compétences acquises :</strong>
-            </p>
-            <p>Utilisation React</p>
-            <p>Gestion de la navigation</p>
+
+              <div className="caps1">
+                <p>
+                  <strong>Projet OpenClassrooms</strong>
+                </p>
+              </div>
+              <div className="caps2">
+                <p>Développement 'from scratch':</p>
+                <p>• Mise en place des routes de l'application</p>
+                <p>• Création de galeries photos modulables</p>
+                <p>• Mise en place de collapsible boxes</p>
+                <p>• Adaptation responsive</p>
+              </div>
+              <div className="caps3">
+                <p>
+                  <strong>Résultat du projet :</strong>
+                </p>
+                <p>Projet validé avec succès.</p>
+                <p>Fonctionnalités demandées mises au point.</p>
+                <p>Bon fonctionnement sur desktops, tablettes & mobiles.</p>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

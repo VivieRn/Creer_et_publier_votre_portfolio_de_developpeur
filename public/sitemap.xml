@@ -14,9 +14,9 @@
         <priority>1.0</priority>
     </url>
 
-    <!-- URL travaux -->
+    <!-- URL projets -->
     <url>
-        <loc>https://nicolas-vivier.com/travaux</loc>
+        <loc>https://nicolas-vivier.com/projets</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>

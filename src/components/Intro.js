@@ -36,22 +36,30 @@ function Intro() {
                 <p>
                   Mon objectif est d'appliquer et d'approfondir mes compétences
                   dans un contexte réel, contribuant ainsi à des projets
-                  concrets tout en poursuivant ma formation.Je suis
+                  concrets tout en poursuivant ma formation. Je suis
                   particulièrement attiré par la possibilité de travailler sur
                   des projets variés, ce qui me permettrait de développer une
                   compréhension holistique du webdesign et du webmarketing.
                 </p>
               </div>
-              <div className="cta">
-                <Link to="/contact">Formulaire de contact</Link>
-              </div>
             </div>
           </div>
-          <div className="img-ctn">
-            <img
-              src={mainImage}
-              alt="Symbolise la puissance d'un bon site web"
-            ></img>
+          <div className="bd">
+            <div className="img-ctn">
+              <img
+                src={mainImage}
+                alt="Symbolise la puissance d'un bon site web"
+              ></img>
+            </div>
+            <div className="cta">
+              <Link
+                to="https://calendly.com/equipe-3wa/prise-de-contact-entreprise-eleve?utm_content=Nicolas%20Vivier&utm_campaign=recpDBIXGCqyZrlco&utm_source=%2033620253505&month=2024-01"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Réserver un entretien !
+              </Link>
+            </div>
           </div>
         </div>
       </div>
