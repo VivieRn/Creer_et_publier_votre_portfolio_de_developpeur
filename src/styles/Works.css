@@ -29,6 +29,9 @@
   width: auto;
   padding-bottom: 0.5em;
   transform: skew(1deg, 0.5deg);
+  margin-top: 2.4em;
+  margin-bottom: 2.5em;
+  transition: transform 0.5s;
 }
 .work-card h2 {
   border-style: solid;

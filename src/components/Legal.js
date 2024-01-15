@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Legal.css";
 
-function NotFound() {
+function Legal() {
   return (
     <div className="legal-part">
       <h1>Mentions Légales</h1>
@@ -128,4 +128,4 @@ function NotFound() {
   );
 }
 
-export default NotFound;
+export default Legal;

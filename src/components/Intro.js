@@ -13,25 +13,19 @@ function Intro() {
             <div className="ctn-cta">
               <div className="center">
                 <p>
-                  Passionné par le développement, le webmarketing et le
-                  webdesign, je recherche un contrat de professionnalisation en
-                  alternance pour approfondir mes compétences en développement
-                  et en design web et valider via la 3W Academy mon diplôme de
-                  Webdesign & Webmarketing.
-                  <br />
-                  <strong>
-                    {" "}
-                    Contrat de professionnalisation – Rythme : 3 semaines en
-                    entreprise / 1 semaine en école.
-                  </strong>
+                  Passionné par la conception, le développement et le design
+                  web, je recherche un contrat de professionnalisation en
+                  alternance pour approfondir mes compétences de
+                  concepteur-développeur et valider mon diplôme de Concepteur
+                  Développeur Full-Stack via la 3W Academy.
                 </p>
                 <p>
                   Avant ma reconversion professionnelle, j'ai acquis une
                   expérience significative en gestion et en communication en
                   tant que chef de réception en hôtellerie. Cette expérience m'a
-                  permis de développer d'excellentes aptitudes en matière de
+                  permis de développer d'excellentes compétences en matière de
                   service client et de travail d'équipe, tout en renforçant ma
-                  capacité à gérer les projets sous pression.
+                  capacité à gérer des projets sous pression.
                 </p>
                 <p>
                   Mon objectif est d'appliquer et d'approfondir mes compétences
@@ -39,7 +33,14 @@ function Intro() {
                   concrets tout en poursuivant ma formation. Je suis
                   particulièrement attiré par la possibilité de travailler sur
                   des projets variés, ce qui me permettrait de développer une
-                  compréhension holistique du webdesign et du webmarketing.
+                  compréhension holistique de la conception et du développement
+                  en full-stack.
+                  <br />
+                  <br />
+                  <strong>
+                    Contrat de professionnalisation – Rythme : 3 semaines en
+                    entreprise / 1 semaine en école.
+                  </strong>
                 </p>
               </div>
             </div>

@@ -1,0 +1,111 @@
+.seo-ctn {
+  background-color: #444;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-seo {
+  border: 3px solid black;
+  background: #fff;
+  box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.5);
+  width: 60%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  transform: skew(1deg, 0deg);
+}
+.title h1 {
+  line-height: 2.75rem;
+  margin: 0;
+  margin-bottom: 0.2em;
+  margin-left: 0.2em;
+  border-style: solid;
+  border-width: 3px;
+  border-image: linear-gradient(to right, white, black, white) 1;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #5da264;
+}
+.title p {
+  margin-top: 0;
+}
+.seo-img {
+  border: 3px solid black;
+  box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.5);
+  transform: skew(2deg, 0deg);
+  margin-bottom: 1em;
+}
+.seo-link {
+  display: flex;
+  justify-content: center;
+}
+.seo-link a {
+  display: block;
+  padding: 0.3em;
+  background-color: #fff;
+  border: 4px solid black;
+  transform: skew(2deg, 1deg);
+  transition: transform 0.5s;
+  margin: 0.5em;
+  color: black;
+}
+.seo-link a:hover {
+  transform: skew(0deg, 0deg) scale(1.1);
+}
+.ctn-tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+.caps2 {
+  width: 80%;
+}
+.return-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+.return-btn a {
+  color: black;
+  text-decoration: none;
+}
+.return-btn a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 1050px) {
+  .seo-img {
+    width: 80%;
+  }
+}
+@media (max-width: 510px) {
+  .card-seo {
+    width: 80%;
+  }
+  .title h1 {
+    font-size: 1.2em;
+  }
+  .title p {
+    font-size: 0.8em;
+  }
+  .caps2 h2 {
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 450px) {
+  .card-seo {
+    transform: skew(0deg, 0deg);
+  }
+  .seo-img {
+    width: 95%;
+  }
+  .seo-link a {
+    font-size: 0.8em;
+  }
+}

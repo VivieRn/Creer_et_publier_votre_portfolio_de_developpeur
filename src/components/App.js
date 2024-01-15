@@ -5,6 +5,8 @@ import React from "react";
 import Intro from "./Intro";
 import Skills from "./Skills";
 import Works from "./Works";
+import OptimisationSeo from "./OptimisationSeo";
+import Kasa from "./Kasa";
 import Contact from "./Contact";
 import Legal from "./Legal";
 import EmailSuccess from "./EmailSuccess";
@@ -24,6 +26,11 @@ function App() {
           <Route path="/" element={<Intro />} />
           <Route path="/competences" element={<Skills />} />
           <Route path="/projets" element={<Works />} />
+          <Route
+            path="/projets/optimisation-seo"
+            element={<OptimisationSeo />}
+          />
+          <Route path="/projets/kasa-react-app" element={<Kasa />} />
           <Route
             path="/contact"
             element={

@@ -10,10 +10,8 @@ function Works() {
         <div className="works-grid">
           <div className="work-card">
             <Link
-              to="https://viviern.github.io/Debugger_et_optimiser_un_site_de_photographe/"
+              to="/projets/optimisation-seo"
               style={{ textDecoration: "none" }}
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <h2>Optimisation SEO</h2>
               <img
@@ -21,57 +19,55 @@ function Works() {
                 alt="Screen shot du site web optimisé de Nina Carducci."
                 loading="lazy"
               ></img>
-              <div className="caps1">
+              <div>
                 <p>
                   <strong>Projet OpenClassrooms</strong>
                 </p>
               </div>
-              <div className="caps2">
+              <div>
                 <p>Amélioration technique du site :</p>
-                <p>• Révision du code HTML</p>
-                <p>• Conversion des photos</p>
-                <p>• Traduction du plugin de gestion des photos</p>
-                <p>• Révision des mots clés</p>
+                <p>• Optimisation globale, performances et SEO.</p>
+                <p>• Correction des fonctionnalités.</p>
+                <p>• Référencement local via schema.org.</p>
+                <p>• Ajout de balises méta.</p>
               </div>
-              <div className="caps3">
+              <div>
                 <p>
                   <strong>Résultat du projet :</strong>
                 </p>
-                <p>Projet validé avec succès.</p>
-                <p>Note maximale via Lighthouse & Wave.</p>
+                <p>Amélioration significative des performances.</p>
+                <p>Correction de toutes les erreurs de fonctionnalités.</p>
                 <p>Meilleur référencement obtenu.</p>
               </div>
             </Link>
           </div>
           <div className="work-card">
             <Link
-              to="https://viviern.github.io/Kasa_React/"
+              to="/projets/kasa-react-app"
               style={{ textDecoration: "none" }}
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <h2>Kasa React App</h2>
               <img src={KASA} alt="Logo de Kasa." loading="lazy"></img>
 
-              <div className="caps1">
+              <div>
                 <p>
                   <strong>Projet OpenClassrooms</strong>
                 </p>
               </div>
-              <div className="caps2">
-                <p>Développement 'from scratch':</p>
-                <p>• Mise en place des routes de l'application</p>
-                <p>• Création de galeries photos modulables</p>
-                <p>• Mise en place de collapsible boxes</p>
-                <p>• Adaptation responsive</p>
+              <div>
+                <p>Développement 'from scratch' :</p>
+                <p>• Mise en place des routes de l'application.</p>
+                <p>• Utilisation des données pour les routes des logements.</p>
+                <p>• Mise en place d'une galerie photo.</p>
+                <p>• Adaptation responsive.</p>
               </div>
-              <div className="caps3">
+              <div>
                 <p>
                   <strong>Résultat du projet :</strong>
                 </p>
-                <p>Projet validé avec succès.</p>
-                <p>Fonctionnalités demandées mises au point.</p>
-                <p>Bon fonctionnement sur desktops, tablettes & mobiles.</p>
+                <p>Bonne gestion des routes et des données.</p>
+                <p>Fonctionnalités demandées correctement mises au point.</p>
+                <p>Bon fonctionnement sur desktops, tablettes et mobiles.</p>
               </div>
             </Link>
           </div>
