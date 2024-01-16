@@ -67,7 +67,7 @@ function Skills() {
                 <p>SCSS</p>
                 <img src={scss} alt="logo SCSS"></img>
               </div>
-              <ProgressBar percentage={60} />
+              <ProgressBar percentage={40} />
             </div>
             <div className="skill">
               <div className="logo-tech">

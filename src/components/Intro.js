@@ -9,37 +9,45 @@ function Intro() {
       <div className="main-ctn">
         <div className="main-card">
           <div className="Intro">
-            <h1>Rapide présentation</h1>
+            <h1>Votre nouveau collaborateur</h1>
             <div className="ctn-cta">
               <div className="center">
                 <p>
-                  Passionné par la conception, le développement et le design
-                  web, je recherche un contrat de professionnalisation en
-                  alternance pour approfondir mes compétences de
-                  concepteur-développeur et valider mon diplôme de Concepteur
-                  Développeur Full-Stack via la 3W Academy.
+                  Débordant d'enthousiasme pour la conception et le
+                  développement web, je suis à la recherche d'une opportunité
+                  stimulante !
                 </p>
                 <p>
-                  Avant ma reconversion professionnelle, j'ai acquis une
-                  expérience significative en gestion et en communication en
-                  tant que chef de réception en hôtellerie. Cette expérience m'a
-                  permis de développer d'excellentes compétences en matière de
-                  service client et de travail d'équipe, tout en renforçant ma
-                  capacité à gérer des projets sous pression.
+                  Ma trajectoire professionnelle n'a pas toujours été liée au
+                  web. En effet, avant de plonger dans cet univers fascinant,
+                  j'ai évolué dans le monde de l'hôtellerie en tant que chef de
+                  réception. Cette expérience unique m'a armé d'une solide
+                  expérience en gestion et en communication, me dotant de
+                  compétences exceptionnelles en service client et en travail
+                  d'équipe. J'ai également appris à gérer des projets dans un
+                  environnement dynamique et parfois sous pression.
                 </p>
                 <p>
-                  Mon objectif est d'appliquer et d'approfondir mes compétences
-                  dans un contexte réel, contribuant ainsi à des projets
-                  concrets tout en poursuivant ma formation. Je suis
-                  particulièrement attiré par la possibilité de travailler sur
-                  des projets variés, ce qui me permettrait de développer une
-                  compréhension holistique de la conception et du développement
-                  en full-stack.
+                  Désormais titulaire d'un titre professionnel de Développeur /
+                  Intégrateur web, mon ambition est claire : mettre en pratique
+                  mes compétences dans un cadre professionnel, contribuant
+                  activement à des projets innovants et concrets.
+                </p>
+                <p>
+                  C'est donc dans ce but que je cherche un contrat de
+                  professionnalisation en tant que Concepteur Développeur
+                  Full-stack .L'univers de la conception et du développement web
+                  full-stack est pour moi une véritable source d'inspiration, et
+                  j'ai hâte de me plonger dans des projets diversifiés. Cela me
+                  permettra non seulement de développer une compréhension
+                  globale et approfondie du domaine, mais aussi de continuer à
+                  apprendre et à me développer dans ce milieu que je chéris
+                  tant.
                   <br />
                   <br />
                   <strong>
-                    Contrat de professionnalisation – Rythme : 3 semaines en
-                    entreprise / 1 semaine en école.
+                    Je suis prêt à faire la différence. Ensemble, transformons
+                    les idées en réalités !
                   </strong>
                 </p>
               </div>
