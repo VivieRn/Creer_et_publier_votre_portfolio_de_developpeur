@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="Footer">
       <h2>Design et développement par Nicolas Vivier</h2>
-      <p>Tous droits réservés © 2023</p>
+      <p>Tous droits réservés © 2024</p>
       <div className="legal-btn">
         <Link className="legal" to="/mentions-legales">
           Mentions légales
