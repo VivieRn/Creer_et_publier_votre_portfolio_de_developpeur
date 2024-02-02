@@ -42,6 +42,11 @@ function OptimisationSeo() {
           <div className="caps2">
             <h2>Développement 'from scratch' :</h2>
             <p>
+              Site de locations immobilières, permettant aux internautes de
+              consulter les différents logements, les informations relatives au
+              logement et à son propriétaire.
+            </p>
+            <p>
               Ce projet a nécessité le développement de Kasa via React depuis
               zéro, en suivant la maquette Figma pour le design, et en
               manipulant les données fournies de 20 logements différents.

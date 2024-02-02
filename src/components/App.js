@@ -7,6 +7,7 @@ import Skills from "./Skills";
 import Works from "./Works";
 import OptimisationSeo from "./OptimisationSeo";
 import Kasa from "./Kasa";
+import Back from "./Back-end";
 import Contact from "./Contact";
 import Legal from "./Legal";
 import EmailSuccess from "./EmailSuccess";
@@ -31,6 +32,7 @@ function App() {
             element={<OptimisationSeo />}
           />
           <Route path="/projets/kasa-react-app" element={<Kasa />} />
+          <Route path="/projets/back-end-nodejs" element={<Back />} />
           <Route
             path="/contact"
             element={

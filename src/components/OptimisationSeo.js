@@ -42,6 +42,11 @@ function OptimisationSeo() {
           <div className="caps2">
             <h2>Amélioration technique du site :</h2>
             <p>
+              Site vitrine de photographe, permettant aux internautes de
+              retrouver les différents projets photographiques, les informations
+              sur le professionnel et les services proposés.
+            </p>
+            <p>
               Ce projet a nécessité une révision des scripts qui le composent.
               En effet, il m'a fallu restructurer le code HTML qui comportait
               des incohérences et des manquements quant aux normes W3C.

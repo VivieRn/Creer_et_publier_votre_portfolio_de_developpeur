@@ -13,6 +13,7 @@ const filesToCache = [
   "/assets/nico-pro-contraste.webp",
   "/assets/works/kasa.webp",
   "/assets/works/SEO.webp",
+  "/assets/works/back-end.webp",
   "/assets/Logo-tech-dev/adobe-illustrator.webp",
   "/assets/Logo-tech-dev/adobe-photoshop.webp",
   "/assets/Logo-tech-dev/blender.webp",
