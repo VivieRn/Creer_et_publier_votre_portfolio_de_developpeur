@@ -6,7 +6,8 @@ import SideBar from "./SideBar";
 function Header() {
   const titlesRef = useRef([
     "Développeur Web",
-    "Designer Web",
+    "Développement Front-End",
+    "Développement Back-End",
     "Nicolas VIVIER",
   ]);
   const [currentTitle, setCurrentTitle] = useState("");

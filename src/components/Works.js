@@ -3,12 +3,48 @@ import "../styles/Works.css";
 import SEO from "../assets/works/SEO.webp";
 import KASA from "../assets/works/kasa.webp";
 import BACK from "../assets/works/back-end.webp";
+import ANG from "../assets/works/messagerie.webp";
 
 function Works() {
   return (
     <div id="worksSection">
       <div className="grid-ctn">
         <div className="works-grid">
+          <div className="work-card">
+            <Link
+              to="/projets/messagerie-angular"
+              style={{ textDecoration: "none" }}
+            >
+              <h2>Messagerie Angular</h2>
+              <img
+                src={ANG}
+                alt="Screen shot du site web optimisé de Nina Carducci."
+                loading="lazy"
+              ></img>
+              <p>Site de Messagerie instantanée.</p>
+              <div>
+                <p>
+                  <strong>Projet ENI</strong>
+                </p>
+              </div>
+              <div>
+                <p>Développement 'from scratch' :</p>
+                <p>• Mise en place des composants de la messagerie.</p>
+                <p>• Mise en place d'un modèle 'UserMessage'.</p>
+                <p>• Mise en place du service de traitement des messages.</p>
+                <p>• Utilisation de Bootstrap pour la mise en forme.</p>
+                <p>• Gestion des routes de l'application.</p>
+              </div>
+              <div>
+                <p>
+                  <strong>Résultat du projet :</strong>
+                </p>
+                <p>L'envoi et l'affichage des messages sont fonctionnels.</p>
+                <p>Gestion réactive du formulaire via Angular.</p>
+                <p>Routage de l'application fonctionnel.</p>
+              </div>
+            </Link>
+          </div>
           <div className="work-card">
             <Link
               to="/projets/optimisation-seo"

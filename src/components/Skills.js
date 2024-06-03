@@ -8,7 +8,10 @@ import html from "../assets/Logo-tech-dev/html5.webp";
 import css from "../assets/Logo-tech-dev/css-3.webp";
 import scss from "../assets/Logo-tech-dev/deposer.webp";
 import js from "../assets/Logo-tech-dev/js.webp";
+import ts from "../assets/Logo-tech-dev/typescript.webp";
 import react from "../assets/Logo-tech-dev/react.webp";
+import ang from "../assets/Logo-tech-dev/angular.webp";
+import boot from "../assets/Logo-tech-dev/bootstrap.webp";
 import vercel from "../assets/Logo-tech-dev/vercel.webp";
 import seo from "../assets/Logo-tech-dev/SEO.webp";
 import figma from "../assets/Logo-tech-dev/figma.webp";
@@ -78,10 +81,31 @@ function Skills() {
             </div>
             <div className="skill">
               <div className="logo-tech">
+                <p>TypeScript</p>
+                <img src={ts} alt="logo TypeScript"></img>
+              </div>
+              <ProgressBar percentage={50} />
+            </div>
+            <div className="skill">
+              <div className="logo-tech">
                 <p>React</p>
                 <img src={react} alt="logo React"></img>
               </div>
-              <ProgressBar percentage={70} />
+              <ProgressBar percentage={60} />
+            </div>
+            <div className="skill">
+              <div className="logo-tech">
+                <p>Angular</p>
+                <img src={ang} alt="logo Angular"></img>
+              </div>
+              <ProgressBar percentage={50} />
+            </div>
+            <div className="skill">
+              <div className="logo-tech">
+                <p>Bootstrap</p>
+                <img src={boot} alt="logo Bootstrap"></img>
+              </div>
+              <ProgressBar percentage={40} />
             </div>
             <div className="skill">
               <div className="logo-tech">
