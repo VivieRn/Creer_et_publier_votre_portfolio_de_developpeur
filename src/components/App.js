@@ -8,6 +8,8 @@ import Works from "./Works";
 import OptimisationSeo from "./OptimisationSeo";
 import Kasa from "./Kasa";
 import Back from "./Back-end";
+import Cave from "./Cave";
+import Filmo from "./Filmo";
 import Messagerie from "./MessagerieAngular";
 import Contact from "./Contact";
 import Legal from "./Legal";
@@ -32,8 +34,10 @@ function App() {
             path="/projets/optimisation-seo"
             element={<OptimisationSeo />}
           />
-          <Route path="/projets/kasa-react-app" element={<Kasa />} />
-          <Route path="/projets/back-end-nodejs" element={<Back />} />
+          <Route path="/projets/kasa-react" element={<Kasa />} />
+          <Route path="/projets/mon-vieux-grimoire-nodejs" element={<Back />} />
+          <Route path="/projets/cave-a-vin" element={<Cave />} />
+          <Route path="/projets/filmotheque" element={<Filmo />} />
           <Route path="/projets/messagerie-angular" element={<Messagerie />} />
           <Route
             path="/contact"

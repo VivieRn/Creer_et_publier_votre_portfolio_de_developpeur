@@ -4,12 +4,78 @@ import SEO from "../assets/works/SEO.webp";
 import KASA from "../assets/works/kasa.webp";
 import BACK from "../assets/works/back-end.webp";
 import ANG from "../assets/works/messagerie.webp";
+import CAVE from "../assets/works/cave.webp";
+import FILMO from "../assets/works/filmo.webp";
 
 function Works() {
   return (
     <div id="worksSection">
       <div className="grid-ctn">
         <div className="works-grid">
+          <div className="work-card">
+            <Link to="/projets/filmotheque" style={{ textDecoration: "none" }}>
+              <h2>Filmothèque Java</h2>
+              <img
+                src={FILMO}
+                alt="Capture d'écran du site web filmothèque."
+                loading="lazy"
+              ></img>
+              <p>Site de gestion d'une filmothèque.</p>
+              <div>
+                <p>
+                  <strong>Projet ENI</strong>
+                </p>
+              </div>
+              <div>
+                <p>Développement 'from scratch' du back-end :</p>
+                <p>• Projet Gradle, Spring Data, Spring MVC et SQL.</p>
+                <p>• Mise en place des classes objets.</p>
+                <p>• Mise en place des Data Access Objects (DAO).</p>
+                <p>• Mise en place du MVC (Model View Controller).</p>
+                <p>• Mise en place de l'internationalisation.</p>
+              </div>
+              <div>
+                <p>
+                  <strong>Résultat du projet :</strong>
+                </p>
+                <p>CRUD fonctionnel permettant de gérer la filmothèque.</p>
+                <p>Développement en couche suivant l'architecture MVC.</p>
+                <p>Internationalisation opérationnelle Français / Anglais.</p>
+              </div>
+            </Link>
+          </div>
+          <div className="work-card">
+            <Link to="/projets/cave-a-vin" style={{ textDecoration: "none" }}>
+              <h2>Cave à vin Java</h2>
+              <img
+                src={CAVE}
+                alt="Capture d'écran du site web de gestion de cave à vin."
+                loading="lazy"
+              ></img>
+              <p>Site de gestion d'une cave à vin.</p>
+              <div>
+                <p>
+                  <strong>Projet ENI</strong>
+                </p>
+              </div>
+              <div>
+                <p>Développement 'from scratch' du back-end :</p>
+                <p>• Projet Gradle Spring Data, Spring Web et SQL.</p>
+                <p>• Mise en place des classes objets.</p>
+                <p>• Mise en place des interfaces Data Access Object.</p>
+                <p>• Mise en place de la couche service.</p>
+                <p>• Ajout des servlets traitant les données.</p>
+              </div>
+              <div>
+                <p>
+                  <strong>Résultat du projet :</strong>
+                </p>
+                <p>CRUD fonctionnel permettant de gérer la cave à vin.</p>
+                <p>Fonctions de tri opérationnelles.</p>
+                <p>Fonction de recherche par mots opérationnelle.</p>
+              </div>
+            </Link>
+          </div>
           <div className="work-card">
             <Link
               to="/projets/messagerie-angular"
@@ -18,7 +84,7 @@ function Works() {
               <h2>Messagerie Angular</h2>
               <img
                 src={ANG}
-                alt="Screen shot du site web optimisé de Nina Carducci."
+                alt="Screen shot du site web de messagerie instantanée."
                 loading="lazy"
               ></img>
               <p>Site de Messagerie instantanée.</p>
@@ -80,11 +146,8 @@ function Works() {
             </Link>
           </div>
           <div className="work-card">
-            <Link
-              to="/projets/kasa-react-app"
-              style={{ textDecoration: "none" }}
-            >
-              <h2>Kasa React App</h2>
+            <Link to="/projets/kasa-react" style={{ textDecoration: "none" }}>
+              <h2>Kasa location React</h2>
               <img src={KASA} alt="Logo de Kasa." loading="lazy"></img>
               <p>Site de locations immobilières.</p>
               <div>
@@ -111,11 +174,15 @@ function Works() {
           </div>
           <div className="work-card">
             <Link
-              to="/projets/back-end-nodejs"
+              to="/projets/mon-vieux-grimoire-nodejs"
               style={{ textDecoration: "none" }}
             >
-              <h2>Back-end NodeJS</h2>
-              <img src={BACK} alt="Logo de Kasa." loading="lazy"></img>
+              <h2>Mon Vieux Grimoire NodeJS</h2>
+              <img
+                src={BACK}
+                alt="Capture d'écran du site web de bibliothèque Mon Vieux Grimoire."
+                loading="lazy"
+              ></img>
               <p>Site communautaire littéraire.</p>
               <div>
                 <p>

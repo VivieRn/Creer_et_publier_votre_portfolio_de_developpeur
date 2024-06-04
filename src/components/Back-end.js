@@ -7,14 +7,14 @@ function OptimisationSeo() {
     <div className="seo-ctn">
       <div className="card-seo">
         <div className="title">
-          <h1>Back-end NodeJS</h1>
+          <h1>Mon Vieux Grimoire NodeJS</h1>
           <p>
             <strong>Projet réaliser pour OpenClassrooms.</strong>
           </p>
         </div>
         <img
           src={BACK}
-          alt="Screen shot du site web optimisé de Nina Carducci."
+          alt="Capture d'écran du site web de bibliothèque Mon Vieux Grimoire."
           loading="lazy"
           className="seo-img"
         ></img>

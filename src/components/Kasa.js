@@ -7,7 +7,7 @@ function OptimisationSeo() {
     <div className="seo-ctn">
       <div className="card-seo">
         <div className="title">
-          <h1>Kasa React App</h1>
+          <h1>Kasa location React</h1>
           <p>
             <strong>Projet réaliser pour OpenClassrooms.</strong>
           </p>

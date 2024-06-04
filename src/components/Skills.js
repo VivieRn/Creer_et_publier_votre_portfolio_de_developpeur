@@ -1,6 +1,9 @@
 import "../styles/Skills.css";
 import React from "react";
 import ProgressBar from "./ProgressBar";
+import java from "../assets/Logo-tech-dev/java.webp";
+import spring from "../assets/Logo-tech-dev/spring.webp";
+import sql from "../assets/Logo-tech-dev/sql.webp";
 import node from "../assets/Logo-tech-dev/nodejs.webp";
 import express from "../assets/Logo-tech-dev/express.webp";
 import mongo from "../assets/Logo-tech-dev/MongoDB.webp";
@@ -27,6 +30,27 @@ function Skills() {
         <div className="skills-column">
           <div className="ctn-skill card1">
             <h2>Back End</h2>
+            <div className="skill">
+              <div className="logo-tech">
+                <p>Java</p>
+                <img src={java} alt="logo Java"></img>
+              </div>
+              <ProgressBar percentage={70} />
+            </div>
+            <div className="skill">
+              <div className="logo-tech">
+                <p>Spring</p>
+                <img src={spring} alt="logo Spring"></img>
+              </div>
+              <ProgressBar percentage={65} />
+            </div>
+            <div className="skill">
+              <div className="logo-tech">
+                <p>SQL</p>
+                <img src={sql} alt="logo SQL"></img>
+              </div>
+              <ProgressBar percentage={65} />
+            </div>
             <div className="skill">
               <div className="logo-tech">
                 <p>Node JS</p>
