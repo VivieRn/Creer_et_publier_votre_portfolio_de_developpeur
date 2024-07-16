@@ -61,12 +61,8 @@ function Intro() {
               ></img>
             </div>
             <div className="cta">
-              <Link
-                to="https://calendly.com/equipe-3wa/prise-de-contact-entreprise-eleve?utm_content=Nicolas%20Vivier&utm_campaign=recpDBIXGCqyZrlco&utm_source=%2033620253505&month=2024-01"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Réserver un entretien !
+              <Link to="/contact" rel="noopener noreferrer">
+                Contactez-moi !
               </Link>
             </div>
           </div>
