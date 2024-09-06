@@ -13,41 +13,31 @@ function Intro() {
             <div className="ctn-cta">
               <div className="center">
                 <p>
-                  Débordant d'enthousiasme pour la conception et le
-                  développement web, je suis à la recherche d'une opportunité
-                  stimulante !
+                  Passionné par la conception et le développement web, je suis à
+                  la recherche d'une opportunité professionnelle enrichissante !
                 </p>
                 <p>
-                  Ma trajectoire professionnelle n'a pas toujours été liée au
-                  web. En effet, avant de plonger dans cet univers fascinant,
-                  j'ai évolué dans le monde de l'hôtellerie en tant que chef de
-                  réception. Cette expérience unique m'a armé d'une solide
-                  expérience en gestion et en communication, me dotant de
-                  compétences exceptionnelles en service client et en travail
-                  d'équipe. J'ai également appris à gérer des projets dans un
-                  environnement dynamique et parfois sous pression.
+                  Après avoir obtenu un titre professionnel de
+                  Développeur/Intégrateur Web et suivi une formation de
+                  Concepteur Développeur Full-stack, j'ai acquis une solide
+                  expertise en technologies front-end et back-end. Je maîtrise
+                  notamment HTML, CSS, JavaScript, React, Angular, Java et SQL.
+                  Mon parcours de formation m'a permis de réaliser plusieurs
+                  projets, tels qu'une filmothèque en Java et une application de
+                  gestion de cave à vin, renforçant ainsi mes compétences
+                  techniques et méthodologiques.
                 </p>
                 <p>
-                  Désormais titulaire d'un titre professionnel de Développeur /
-                  Intégrateur web, mon ambition est claire : mettre en pratique
-                  mes compétences dans un cadre professionnel, contribuant
-                  activement à des projets innovants et concrets.
+                  Je suis motivé par l'idée de créer des solutions web
+                  performantes, efficaces et centrées sur l'utilisateur. Mon
+                  objectif est de contribuer activement à des projets innovants
+                  et de continuer à apprendre dans ce domaine en constante
+                  évolution.
                 </p>
                 <p>
-                  C'est donc dans ce but que je cherche un contrat de
-                  professionnalisation en tant que Concepteur Développeur
-                  Full-stack .L'univers de la conception et du développement web
-                  full-stack est pour moi une véritable source d'inspiration, et
-                  j'ai hâte de me plonger dans des projets diversifiés. Cela me
-                  permettra non seulement de développer une compréhension
-                  globale et approfondie du domaine, mais aussi de continuer à
-                  apprendre et à me développer dans ce milieu que je chéris
-                  tant.
-                  <br />
-                  <br />
                   <strong>
-                    Je suis prêt à faire la différence. Ensemble, transformons
-                    les idées en réalités !
+                    Prêt à relever de nouveaux défis, je suis convaincu de
+                    pouvoir apporter une réelle valeur ajoutée à vos projets !
                   </strong>
                 </p>
               </div>
